@@ -1,4 +1,4 @@
-hyper - return : open -a /Applications/iTerm.app
+hyper - return : open -a /Applications/Warp.app
 
 # focus window
 alt - x : yabai -m window --focus recent
