@@ -37,12 +37,12 @@
             ]
           },
           {
-            "description": "double left shift to cap_lock",
+            "description": "double right shift to cap_lock",
             "manipulators": [
               {
                 "type": "basic",
                 "from": {
-                  "key_code": "left_shift",
+                  "key_code": "right_shift",
                   "modifiers": {
                     "optional": ["any"]
                   }
@@ -66,7 +66,7 @@
                   "basic.to_delayed_action_delay_milliseconds": 1000
                 },
                 "from": {
-                  "key_code": "left_shift",
+                  "key_code": "right_shift",
                   "modifiers": {
                     "optional": ["any"]
                   }
@@ -79,7 +79,7 @@
                     }
                   },
                   {
-                    "key_code": "left_shift"
+                    "key_code": "right_shift"
                   }
                 ],
                 "to_delayed_action": {
