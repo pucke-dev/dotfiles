@@ -14,7 +14,7 @@ yabai -m space 10 --label notes
 
 # window rules
 yabai -m rule --add app="^Google Chrome$" space=web manage=off
-yabai -m rule --add app="^iTerm$" space=terminal
+yabai -m rule --add app="^Warp$" space=terminal
 yabai -m rule --add app="^(IntelliJ IDEA|WebStorm|DataGrip|GoLand)$" manage=off space=code
 yabai -m rule --add app="^(IntelliJ IDEA|WebStorm|DataGrip|GoLand)$" title="~/workspace/" manage=on space=code
 yabai -m rule --add app="^Visual Studio Code$" space=code
