@@ -37,7 +37,7 @@
             ]
           },
           {
-            "description": "double right shift to cap_lock",
+            "description": "double left shift to cap_lock",
             "manipulators": [
               {
                 "type": "basic",
@@ -313,3 +313,4 @@
     }
   ]
 }
+

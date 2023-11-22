@@ -14,19 +14,21 @@ yabai -m space 10 --label notes
 
 # window rules
 yabai -m rule --add app="^Google Chrome$" space=web manage=off
-yabai -m rule --add app="^Warp$" space=terminal
-yabai -m rule --add app="^(IntelliJ IDEA|WebStorm|DataGrip|GoLand)$" manage=off space=code
-yabai -m rule --add app="^(IntelliJ IDEA|WebStorm|DataGrip|GoLand)$" title="~/workspace/" manage=on space=code
-yabai -m rule --add app="^Visual Studio Code$" space=code
+yabai -m rule --add app="^Alacritty$" space=terminal
+yabai -m rule --add app="^(IntelliJ IDEA|WebStorm|DataGrip|GoLand|Fleet)$" manage=off space=code
+yabai -m rule --add app="^(IntelliJ IDEA|WebStorm|DataGrip|GoLand|Fleet)$" title="~/workspace/" manage=on space=code
 yabai -m rule --add app="^Slack$" space=social
 yabai -m rule --add app="^Google Chat$" space=social
 yabai -m rule --add app="^MongoDB Compass$" space=cluster 
 yabai -m rule --add app="^Spotify$" space=media
 yabai -m rule --add app="^Obsidian$" space=notes
+yabai -m rule --add app="^Linear$" space=notes
 
 yabai -m rule --add app="^System Preferences$" manage=off
 yabai -m rule --add app="^Finder$" manage=off
 yabai -m rule --add app="System Information" manage=off
+yabai -m rule --add app="Toolbox|JetBrains Toolbox" manage=off
+yabai -m rule --add app="^Slack$" manage=off
 
 yabai -m config --space social layout float
 
@@ -38,10 +40,6 @@ yabai -m config                              \
     window_topmost              off          \
     window_shadow               off          \
     window_animation_duration   0.25         \
-    window_opacity_duration     0.25         \
-    active_window_opacity       1.0         \
-    normal_window_opacity       0.8         \
-    window_opacity              on           \
     insert_feedback_color       0xaad75f5f   \
     active_window_border_color  0xBF775759   \
     normal_window_border_color  0x7f353535   \
@@ -65,3 +63,4 @@ yabai -m config                              \
     mouse_drop_action           swap
 
 echo "yabai configuration loaded.."
+
