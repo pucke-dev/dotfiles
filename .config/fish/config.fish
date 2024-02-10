@@ -8,10 +8,3 @@ alias kk="kubectl"
 
 starship init fish | source
 
-export PATH="$HOME/bin:$PATH"
-export PATH="$HOME/.cargo/bin:$PATH"
-
-set -gx VOLTA_HOME "$HOME/.volta"
-set -gx PATH "$VOLTA_HOME/bin" $PATH
-set -gx PATH "$HOME/go/bin" $PATH
-
