@@ -1,3 +1,6 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
 command_timeout = 10000
 
 [aws]
@@ -20,6 +23,7 @@ read_only = " "
 
 [docker_context]
 symbol = " "
+disabled = true
 
 [elixir]
 symbol = " "
@@ -141,5 +145,8 @@ symbol = " "
 symbol = "🅢 "
 
 [kubernetes]
-format = '[⎈  in $context](#326ce5) '
+format = '[⎈  in $context \($namespace\)](#326ce5) '
 disabled = false
+
+[gcloud]
+format = 'on [$symbol$account(@$domain)(\($project\))]($style) '

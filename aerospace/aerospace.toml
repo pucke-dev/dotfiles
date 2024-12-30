@@ -109,12 +109,13 @@ alt-shift-minus = 'resize smart -50'
 alt-shift-equal = 'resize smart +50'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
-alt-1 = 'workspace 1' # Terminal Screen
+alt-1 = 'workspace 1'
 alt-2 = 'workspace 2' # IDE Screen...oneday I can remove this!
 alt-3 = 'workspace 3' # Browser
 alt-4 = 'workspace 4' # Slack, Calendar, Teams
 alt-5 = 'workspace 5' # Kubernetes Applications like Lens... ondeay I will switch to k9s maybe
 alt-o = 'workspace O' # Obsidian used for note taking
+alt-t = 'workspace T' # Terminal
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 alt-shift-1 = 'move-node-to-workspace 1'
@@ -123,6 +124,7 @@ alt-shift-3 = 'move-node-to-workspace 3'
 alt-shift-4 = 'move-node-to-workspace 4'
 alt-shift-5 = 'move-node-to-workspace 5'
 alt-shift-o = 'move-node-to-workspace O'
+alt-shift-t = 'move-node-to-workspace T'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 alt-tab = 'workspace-back-and-forth'
@@ -150,13 +152,19 @@ alt-shift-l = ['join-with right', 'mode main']
 1 = 'main'
 2 = 'main'
 3 = 'main'
-4 = ['^built-in retina display$', 'secondary', 'main']
+4 = 'main' 
+# 4 = ['^built-in retina display$', 'secondary', 'main']
 5 = 'main'
 o = 'main'
+t = 'main' # Terminal
 
 [[on-window-detected]]
-if.app-id = 'com.github.wez.wezterm'
-run = 'move-node-to-workspace 1'
+if.app-id = "com.mitchellh.ghostty"
+run = [
+  "layout floating",
+  # WARN: Disabled below line becaue ghosttys quick terminal action will move to the defined workspace right now.
+  #  "move-node-to-workspace T",
+]
 
 [[on-window-detected]]
 if.app-id = 'com.jetbrains.goland'
@@ -189,4 +197,8 @@ run = 'move-node-to-workspace 5'
 [[on-window-detected]]
 if.app-id = 'md.obsidian'
 run = 'move-node-to-workspace O'
+
+[[on-window-detected]]
+if.app-id = 'com.utmapp.UTM'
+run = 'move-node-to-workspace 1'
 
