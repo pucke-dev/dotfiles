@@ -23,10 +23,11 @@ starship init fish | source
 zoxide init fish --cmd cd | source
 
 fish_add_path -g $(which go)
+fish_add_path -g "$HOME/.go/bin"
 
 set -Ux CARAPACE_BRIDGES 'zsh,fish,bash,inshellisense' # optional
 mkdir -p ~/.config/fish/completions
-carapace --list | awk '{print $1}' | xargs -I{} touch ~/.config/fish/completions/{}.fish # disable auto-loaded completions (#185)
+carapace --list | awk '{print $1}' | grep -v "^zoxide\$" |xargs -I{} touch ~/.config/fish/completions/{}.fish # disable auto-loaded completions (#185)
 carapace _carapace | source
 
 direnv hook fish | source
