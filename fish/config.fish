@@ -7,7 +7,7 @@ end
 ### Environment Variables ###
 export XDG_CONFIG_HOME="$HOME/.config"
 export EDITOR="nvim"
-export STARSHIP_CONFIG="~/.config/starship/starship.toml"
+export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 
 # Podman Configuration
 export TESTCONTAINERS_RYUK_DISABLED=true
