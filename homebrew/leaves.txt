@@ -1,0 +1,9 @@
+atuin
+bat
+protobuf
+ripgrep
+starship
+stow
+tmux
+yazi
+zoxide
