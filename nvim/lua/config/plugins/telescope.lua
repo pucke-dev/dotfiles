@@ -65,24 +65,15 @@ return {
 
             require("telescope").load_extension("fzf")
 
-            vim.keymap.set("n", "<space>fd", require("telescope.builtin").find_files)
-            vim.keymap.set("n", "<space>fh", require("telescope.builtin").help_tags)
-            vim.keymap.set("n", "<space>fg", live_grep)
-            vim.keymap.set("n", "<space>ep", function()
+            vim.keymap.set("n", "<space>fd", require("telescope.builtin").find_files, { desc = "Find in [D]irectory" })
+            vim.keymap.set("n", "<space>fh", require("telescope.builtin").help_tags, { desc = "Find [H]elp" })
+            vim.keymap.set("n", "<space>fg", live_grep, { desc = "Live [G]rep" })
+
+            vim.keymap.set("n", "<space>ed", function()
                 require("telescope.builtin").find_files {
-                    cwd = vim.fs.joinpath(vim.fn.stdpath("data"), "lazy")
+                    cwd = "~/github.com/pucke-dev/dotfiles/"
                 }
             end)
-
-
-
-
-            -- WARNING: The following does not include symlinks...
-            -- vim.keymap.set("n", "<space>ed", function()
-            -- require("telescope.builtin").find_files {
-            -- cwd = "~/.config"
-            -- }
-            -- end)
         end
     },
 }

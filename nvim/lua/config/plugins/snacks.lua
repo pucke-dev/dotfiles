@@ -10,7 +10,7 @@ return {
             notifier = { enabled = true },
         },
         keys = {
-            { "<space>gB", function() Snacks.gitbrowse() end, desc = "Git Browse", mode = { "n", "v" } },
+            { "<space>gB", function() Snacks.gitbrowse() end, desc = "[G]it [B]rowse", mode = { "n", "v" } },
         },
     }
 }

@@ -12,7 +12,7 @@ return {
             {
                 "<leader>sd",
                 "<cmd>Trouble diagnostics toggle focus=true filter.buf=0<cr>",
-                desc = "[S]how [B]uffer [D]iagnostics (Trouble)",
+                desc = "[S]how Buffer [D]iagnostics (Trouble)",
             },
             {
                 "<leader>ss",

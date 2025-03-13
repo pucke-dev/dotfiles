@@ -11,6 +11,7 @@ local lsps = {
     tailwindcss = {},
     html = {},
     graphql = {},
+    --    golangci_lint_ls = {},
     gopls = {
         settings = {
             gopls = {
@@ -29,6 +30,13 @@ local lsps = {
         },
     },
     terraformls = {},
+    phpactor = {
+        init_options = {
+            ["language_server_phpstan.enabled"] = true,
+            ["language_server_psalm.enabled"] = false,
+        },
+    },
+    protols = {},
 }
 
 return {
@@ -53,15 +61,15 @@ return {
                 load_lsp(lsp, opts, capabilities)
             end
 
-            vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Goto Definition" })
-            vim.keymap.set("n", "gr", vim.lsp.buf.references, { desc = "Goto References" })
-            vim.keymap.set("n", "gI", vim.lsp.buf.implementation, { desc = "Goto Implementation" })
-            vim.keymap.set("n", "gy", vim.lsp.buf.type_definition, { desc = "Goto Type Definition" })
-            vim.keymap.set("n", "gic", vim.lsp.buf.incoming_calls, { desc = "Goto Incoming Calls" })
-            vim.keymap.set("n", "goc", vim.lsp.buf.outgoing_calls, { desc = "Goto Outgoing Calls" })
-            vim.keymap.set("n", "gD", vim.lsp.buf.declaration, { desc = "Goto Declaration" })
-            vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, { desc = "Code Action" })
-            vim.keymap.set("n", "<leader>cr", vim.lsp.buf.rename, { desc = "Rename" })
+            vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "[G]oto [D]efinition" })
+            vim.keymap.set("n", "gD", vim.lsp.buf.declaration, { desc = "[G]oto [D]eclaration" })
+            vim.keymap.set("n", "gr", vim.lsp.buf.references, { desc = "[G]oto [R]eferences" })
+            vim.keymap.set("n", "gI", vim.lsp.buf.implementation, { desc = "[G]oto [I]mplementation" })
+            vim.keymap.set("n", "gy", vim.lsp.buf.type_definition, { desc = "Goto T[y]pe Definition" })
+            vim.keymap.set("n", "gic", vim.lsp.buf.incoming_calls, { desc = "[G]oto [I]ncoming [C]alls" })
+            vim.keymap.set("n", "goc", vim.lsp.buf.outgoing_calls, { desc = "[G]oto [O]utgoing [C]alls" })
+            vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, { desc = "[C]ode [A]ction" })
+            vim.keymap.set("n", "<leader>cr", vim.lsp.buf.rename, { desc = "[R]ename" })
 
 
             vim.api.nvim_create_autocmd('LspAttach', {
