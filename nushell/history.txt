@@ -1,0 +1,1680 @@
+cd ..
+cd github.com/lovoo/picture/
+go test ./...
+which nvim
+config nu
+exit
+config nu
+which nvim
+exit
+config nu
+atuin init nu | save ~/.local/share/atuin/init.nu
+atuin init nu | save ~/.local/share/atuin/init.nu -f
+cat ~/.local/share/atuin/init.nu
+config nu
+exit
+config nu
+ls | table --theme default
+ls | table --theme basic
+ls | table --theme compact
+ls | table --theme compact_double
+ls | table --theme heavy
+ls | table --theme light
+ls | table --theme none
+ls | table --theme reinforced
+ls | table --theme rounded
+ls | table --theme thin
+ls | table --theme with_love
+ls | table --theme psql
+ls | table --theme markdown
+ls | table --theme dots
+ls | table --theme restructured
+ls | table --theme ascii_rounded
+ls | table --theme basic_compact
+ls | table --theme default
+ls
+explore
+ls | explore
+explore
+config nu
+exit
+ls
+config nu --doc | nu-highlight | less -R
+exit
+v .
+nvim
+config nu
+$nu.data-dir
+export
+$env
+$env.XDG_DATA_DIRS
+$nu.data-dir
+$nu.vendor-autoload-dirs
+config nu
+exit
+$nu.data-dir
+ls $nu.data-dir
+config nu
+exit
+$nu.data-dir
+config env
+exit
+config nu
+exit
+$nu.data-dir
+exit
+$nu.data-dir
+cd ../.local/
+ls
+cd "$HOME"
+cd ..
+rm "$HOME"
+cd "$HOME"
+ls
+cd "$HOME"
+ls
+cd ..
+ls
+cd ..
+cd .config/
+ls
+cd ../.local/
+ls
+cd share
+ls
+mkdir vendor
+cd vendor/
+mkdir autoload
+cd autoload/
+ls
+exit
+$nu.data-dir
+config nu
+exit
+starship init nu
+cd ~/
+cd .local/
+ls
+cd share/
+ls
+cd nvim/
+ls
+cd ..
+ls
+cd vendor/autoload/
+ls
+starship init nu | save -f "vendor/autoload/starship.nu"
+starship init nu | save -f "starship.nu"
+ls
+rm starship.nu
+config nu
+exit
+ls
+cd ~/.config
+config nu
+exit
+config nu
+ls
+cd ..
+ls
+v .
+nvim .
+vi .
+fish
+exit
+nvim .
+exit
+nvim .
+v .
+nvim .
+exit
+fzf
+nvim .
+exit
+cd picture
+cd .config
+config nu
+exit
+config nu --doc
+config nu --doc | nu-highlight | less -R
+config nu
+exit
+config nu
+exit
+config nu
+exit
+config nu
+exit
+config nu
+exit
+config nu
+exit
+config nu
+exit
+config nu
+exit
+$env
+$env.PATH | uniq 
+$env.PATH
+$env | reject config | transpose key val | each {|r| echo $"$env.($r.key) = '($r.val)'"} | str join (char nl)<\n>
+v .
+$env.SHELL
+which nu
+which nu | pbcopy
+which nu | select path | pbcopy
+v .
+zoxide
+:q
+q
+exit
+config nu
+cd ~/.config/ghostty
+v .
+$env.PATH
+config nu
+cd ~/.config/ghostty
+v .
+$nu
+$nu.config-path
+$env
+$env.PATH
+config nu
+$env.config
+$nu
+EDITOR=nvim config nu
+cd .local
+ls
+ls-core
+cd bin
+cd-core bin
+ls
+fish
+$nu
+$env.PATH
+$nu.config-path
+cat-core /Users/philippucke/github.com/pucke-dev/dotfiles/nushell/config.nu
+source $nu.config-path
+$env.PATH
+ls
+$env.PATH
+cd .config/
+ls
+ps -o comm= $$
+)
+ls
+ls-core
+ls
+ls --long 
+clear
+$nu.data-dir
+cd .local/
+ls
+cd share/
+;s
+ls
+gs
+cd nushell/
+ls
+cd vendor/
+ls
+cd autoload/
+ls
+$nu.data-dir
+config nu
+cd .local/share/nushell/
+l;s
+ls
+cd vendor/autoload/
+ls
+cat carapace.nu 
+v carapace.nu 
+nvim carapace.nu 
+which nvim
+config nu
+which nvim
+config nu
+which nvim
+v .
+cd .local/share/nushell/
+ls
+cd vendor/autoload/
+ls
+$env
+$env.config.completions
+config nu
+cd ~
+cd picture
+config nu
+source $nu.config-path
+cd github.com/
+cd lovoo/
+cd picture/
+cd ~
+$env.config.completions
+cd .local/share/nushell/
+cd vendor/autoload/
+ls
+v zoxide.nu 
+rm zoxide.nu
+cat starship.nu 
+cat carapace.nu 
+rm carapace.nu
+ls
+config nu
+$env.config.completions
+$env.config.completions.external
+$env.config.completions
+$env.config.completions | explore
+config nu
+$env.config.completions
+$env.config.completions.external
+config env
+config nu
+config env
+config nu
+cd /Users/philippucke/pictures
+config nu
+cd /Users/philippucke/pictures
+clear
+ls
+cd ~
+ls
+ls -al
+rm .zoxide.nu
+cd /Users/philippucke/github.com/lovoo/picture
+cd ~
+cd /Users/philippucke/github.com/lovoo
+cd ~
+gcloud secrets list
+gcloud secrets list | detect columns 
+gcloud beta builds triggers list | detect columns 
+gcloud beta builds triggers list
+gcloud beta builds triggers list | from yaml
+gcloud beta builds triggers list | from yaml | headers 
+gcloud beta builds triggers list | from yaml | head
+gcloud beta builds triggers list | from yaml
+gcloud beta builds triggers list | from yaml | select name
+gcloud beta builds triggers list | from yaml | where name = match-profile-image
+gcloud beta builds triggers list | from yaml | where name == match-profile-image
+kubectl get deployments api-gateway 
+k get deployments php-backend-prod -o wide | detect columns 
+k get deployments php-backend-prod -o wide 
+k get deployments php-backend-prod -o wide | detect columns 
+k get deployments php-backend-prod -o wide | detect columns | table --theme compact
+k get deployments php-backend-prod -o wide | detect columns | table --theme love
+k get deployments php-backend-prod -o wide | detect columns | table --theme with_love
+kubectl get replicasets api-gateway-*
+k get deployments -o wide 
+k get deployments -o wide | detect columns 
+k get deployments -o wide | detect columns
+cd tripsnap
+ls
+gs
+rm -rf *
+ls
+clear
+go mod init github.com/pucke-dev/tripsnap
+ls
+go get go.uber.org/fx@latest
+v .
+gs
+git init
+gs
+v .
+$env.PATH
+config nu
+source $nu.config-path
+v .
+go run .
+v .
+mv main.go cmd/
+ls
+go run .
+ls
+go run ./cmd
+http post --help
+http post "http://localhost:8080" "foobar"
+http post localhost:8080 "foobar"
+http post http://localhost:8080 "foobar"
+http post --help
+http post https://www.example.com 'body'
+http post https://localhost:8080 'body'
+http post http://localhost:8080 'body'
+http post http://localhost:8080/echo 'body'
+go run ./cmd
+v .
+ls
+cd /Users/philippucke/github.com/lovoo/api-gateway
+gl
+cd /Users/philippucke/github.com/lovoo/identity-service
+v .
+cd /Users/philippucke/github.com/lovoo/profile-service
+gl
+cd /Users/philippucke/github.com/lovoo/profile
+gl
+git checkout -b MRQ-5333
+ls
+cd /Users/philippucke/github.com/lovoo/php-backend
+gl
+go get github.com/lovoo/go-genproto@latest
+node -v
+config nu
+source $nu.config-path
+node -v
+source $nu.config-path
+v .
+source $nu.config-path
+ls
+clear
+"2Lk3h7ZxxYQz.1DS01Y.1PuaQCf" | split "."
+"2Lk3h7ZxxYQz.1DS01Y.1PuaQCf" | split
+echo "2Lk3h7ZxxYQz.1DS01Y.1PuaQCf" | split
+echo "2Lk3h7ZxxYQz.1DS01Y.1PuaQCf" | split chars 
+echo "2Lk3h7ZxxYQz.1DS01Y.1PuaQCf" | split column .
+let data = echo "2Lk3h7ZxxYQz.1DS01Y.1PuaQCf" | split column "."; 
+data
+let data = echo "2Lk3h7ZxxYQz.1DS01Y.1PuaQCf" | split column "."; ["signature", "time", "userID"] | append data
+let $data = echo "2Lk3h7ZxxYQz.1DS01Y.1PuaQCf" | split column "."; ["signature", "time", "userID"] | append $data
+let $data = echo "2Lk3h7ZxxYQz.1DS01Y.1PuaQCf" | split row "."; ["signature", "time", "userID"] | append $data
+let data = echo "2Lk3h7ZxxYQz.1DS01Y.1PuaQCf" | split column ".";
+echo "2Lk3h7ZxxYQz.1DS01Y.1PuaQCf" | split column .
+echo "2Lk3h7ZxxYQz.1DS01Y.1PuaQCf" | split column . | rename signature time userID
+echo "2Lk3h7ZxxYQz.1DS01Y.1PuaQCf" | split column . | rename signature time userID | update userID {|row| $row.userID | base64 -d}
+echo "1PuaQCf" | base64 -d
+man base64
+echo "2Lk3h7ZxxYQz.1DS01Y.1PuaQCf" | split column . | rename signature time userID
+echo "1PuaQCf" | base64 -d
+echo "2Lk3h7ZxxYQz.1DS01Y.1PuaQCf" | split column . | rename signature time userID | update userID {|row| $row.userID | base64 -d}
+echo "2Lk3h7ZxxYQz.1DS01Y.1PuaQCf" | split column . | rename signature time userID
+echo "2Lk3h7ZxxYQz.1DS01Y.1PuaQCf" | split column . | rename signature time userID | pbcopy
+echo "2Lk3h7ZxxYQz.1DS01Y.1PuaQCf" | split column . | rename signature time userID | table --theme asd
+echo "2Lk3h7ZxxYQz.1DS01Y.1PuaQCf" | split column . | rename signature time userID | table --theme markdown | pbcopy
+echo "2Lk3h7ZxxYQz.1DS01Y.1PuaQCf" | split column . | rename signature time userID | table --theme markdown 
+v .
+gs
+git restore .
+gs
+rm internal/storage/user_settings.go
+gl
+v .
+go get github.com/lovoo/go-genproto@latest
+v .
+gs
+go test ./...
+go test -failfast ./...
+v internal/storage/profile.go 
+v internal/storage/profile.go
+go test -failfast ./...
+v .
+go test -failfast ./...
+v .
+go test -failfast ./...
+go test -failfast ./... | grep "settings"
+go test -failfast ./... > tmp.txt
+go test -failfast ./... i>> tmp.txt
+go test -failfast ./... >> tmp.txt
+go test -failfast ./... |> tmp.txt
+go test -failfast ./... | save tmp.txt
+ls
+cat tmp.txt 
+v tmp.txt 
+rm tmp.txt
+v .
+go test -failfast ./...
+[["name", "created", "updated", "last_request_time", "last_logout", "username", "first_name", "last_name", "display_name", "email", "birthday", "locale", "gender", "gender_details", "show_gender_details", "settings", "ethnicities", "sexual_orientation", "interview", "home_location", "current_location", "billing_location", "search_settings", "ab_test_assignment", "roles", "flags", "body_type", "religion", "network_user_id", "brand", "imperial_measurement_system", "registration", "profile_progress", "terms_accepted_version", "third_party_consent"] ,["name", "created", "updated", "last_request_time", "last_logout", "username", "first_name", "last_name", "display_name", "email", "birthday", "locale", "gender", "show_gender", "gender_details", "show_gender_details", "settings", "ethnicities", "sexual_orientation", "interview", "home_location", "current_location", "billing_location", "search_settings", "ab_test_assignment", "roles", "flags", "body_type", "religion", "network_user_id", "brand", "imperial_measurement_system", "registration", "profile_progress", "terms_accepted_version", "third_party_consent"]]
+[["name", "created", "updated", "last_request_time", "last_logout", "username", "first_name", "last_name", "display_name", "email", "birthday", "locale", "gender", "gender_details", "show_gender_details", "settings", "ethnicities", "sexual_orientation", "interview", "home_location", "current_location", "billing_location", "search_settings", "ab_test_assignment", "roles", "flags", "body_type", "religion", "network_user_id", "brand", "imperial_measurement_system", "registration", "profile_progress", "terms_accepted_version", "third_party_consent"] ,["name", "created", "updated", "last_request_time", "last_logout", "username", "first_name", "last_name", "display_name", "email", "birthday", "locale", "gender", "show_gender", "gender_details", "show_gender_details", "settings", "ethnicities", "sexual_orientation", "interview", "home_location", "current_location", "billing_location", "search_settings", "ab_test_assignment", "roles", "flags", "body_type", "religion", "network_user_id", "brand", "imperial_measurement_system", "registration", "profile_progress", "terms_accepted_version", "third_party_consent"]] | transpose 
+[["name", "created", "updated", "last_request_time", "last_logout", "username", "first_name", "last_name", "display_name", "email", "birthday", "locale", "gender", "gender_details", "show_gender_details", "settings", "ethnicities", "sexual_orientation", "interview", "home_location", "current_location", "billing_location", "search_settings", "ab_test_assignment", "roles", "flags", "body_type", "religion", "network_user_id", "brand", "imperial_measurement_system", "registration", "profile_progress", "terms_accepted_version", "third_party_consent"]; ["name", "created", "updated", "last_request_time", "last_logout", "username", "first_name", "last_name", "display_name", "email", "birthday", "locale", "gender", "show_gender", "gender_details", "show_gender_details", "settings", "ethnicities", "sexual_orientation", "interview", "home_location", "current_location", "billing_location", "search_settings", "ab_test_assignment", "roles", "flags", "body_type", "religion", "network_user_id", "brand", "imperial_measurement_system", "registration", "profile_progress", "terms_accepted_version", "third_party_consent"]]
+["name", "created", "updated", "last_request_time", "last_logout", "username", "first_name", "last_name", "display_name", "email", "birthday", "locale", "gender", "gender_details", "show_gender_details", "settings", "ethnicities", "sexual_orientation", "interview", "home_location", "current_location", "billing_location", "search_settings", "ab_test_assignment", "roles", "flags", "body_type", "religion", "network_user_id", "brand", "imperial_measurement_system", "registration", "profile_progress", "terms_accepted_version", "third_party_consent"] | append ["name", "created", "updated", "last_request_time", "last_logout", "username", "first_name", "last_name", "display_name", "email", "birthday", "locale", "gender", "show_gender", "gender_details", "show_gender_details", "settings", "ethnicities", "sexual_orientation", "interview", "home_location", "current_location", "billing_location", "search_settings", "ab_test_assignment", "roles", "flags", "body_type", "religion", "network_user_id", "brand", "imperial_measurement_system", "registration", "profile_progress", "terms_accepted_version", "third_party_consent"]
+["name", "created", "updated", "last_request_time", "last_logout", "username", "first_name", "last_name", "display_name", "email", "birthday", "locale", "gender", "gender_details", "show_gender_details", "settings", "ethnicities", "sexual_orientation", "interview", "home_location", "current_location", "billing_location", "search_settings", "ab_test_assignment", "roles", "flags", "body_type", "religion", "network_user_id", "brand", "imperial_measurement_system", "registration", "profile_progress", "terms_accepted_version", "third_party_consent"] | append ["name", "created", "updated", "last_request_time", "last_logout", "username", "first_name", "last_name", "display_name", "email", "birthday", "locale", "gender", "show_gender", "gender_details", "show_gender_details", "settings", "ethnicities", "sexual_orientation", "interview", "home_location", "current_location", "billing_location", "search_settings", "ab_test_assignment", "roles", "flags", "body_type", "religion", "network_user_id", "brand", "imperial_measurement_system", "registration", "profile_progress", "terms_accepted_version", "third_party_consent"] | transpose 
+["name", "created", "updated", "last_request_time", "last_logout", "username", "first_name", "last_name", "display_name", "email", "birthday", "locale", "gender", "gender_details", "show_gender_details", "settings", "ethnicities", "sexual_orientation", "interview", "home_location", "current_location", "billing_location", "search_settings", "ab_test_assignment", "roles", "flags", "body_type", "religion", "network_user_id", "brand", "imperial_measurement_system", "registration", "profile_progress", "terms_accepted_version", "third_party_consent"] | append ["name", "created", "updated", "last_request_time", "last_logout", "username", "first_name", "last_name", "display_name", "email", "birthday", "locale", "gender", "show_gender", "gender_details", "show_gender_details", "settings", "ethnicities", "sexual_orientation", "interview", "home_location", "current_location", "billing_location", "search_settings", "ab_test_assignment", "roles", "flags", "body_type", "religion", "network_user_id", "brand", "imperial_measurement_system", "registration", "profile_progress", "terms_accepted_version", "third_party_consent"]
+["name", "created", "updated", "last_request_time", "last_logout", "username", "first_name", "last_name", "display_name", "email", "birthday", "locale", "gender", "gender_details", "show_gender_details", "settings", "ethnicities", "sexual_orientation", "interview", "home_location", "current_location", "billing_location", "search_settings", "ab_test_assignment", "roles", "flags", "body_type", "religion", "network_user_id", "brand", "imperial_measurement_system", "registration", "profile_progress", "terms_accepted_version", "third_party_consent"] | merge ["name", "created", "updated", "last_request_time", "last_logout", "username", "first_name", "last_name", "display_name", "email", "birthday", "locale", "gender", "show_gender", "gender_details", "show_gender_details", "settings", "ethnicities", "sexual_orientation", "interview", "home_location", "current_location", "billing_location", "search_settings", "ab_test_assignment", "roles", "flags", "body_type", "religion", "network_user_id", "brand", "imperial_measurement_system", "registration", "profile_progress", "terms_accepted_version", "third_party_consent"]
+[["name", "created", "updated", "last_request_time", "last_logout", "username", "first_name", "last_name", "display_name", "email", "birthday", "locale", "gender", "gender_details", "show_gender_details", "settings", "ethnicities", "sexual_orientation", "interview", "home_location", "current_location", "billing_location", "search_settings", "ab_test_assignment", "roles", "flags", "body_type", "religion", "network_user_id", "brand", "imperial_measurement_system", "registration", "profile_progress", "terms_accepted_version", "third_party_consent"]] | merge [["name", "created", "updated", "last_request_time", "last_logout", "username", "first_name", "last_name", "display_name", "email", "birthday", "locale", "gender", "show_gender", "gender_details", "show_gender_details", "settings", "ethnicities", "sexual_orientation", "interview", "home_location", "current_location", "billing_location", "search_settings", "ab_test_assignment", "roles", "flags", "body_type", "religion", "network_user_id", "brand", "imperial_measurement_system", "registration", "profile_progress", "terms_accepted_version", "third_party_consent"]]
+["name", "created", "updated", "last_request_time", "last_logout", "username", "first_name", "last_name", "display_name", "email", "birthday", "locale", "gender", "gender_details", "show_gender_details", "settings", "ethnicities", "sexual_orientation", "interview", "home_location", "current_location", "billing_location", "search_settings", "ab_test_assignment", "roles", "flags", "body_type", "religion", "network_user_id", "brand", "imperial_measurement_system", "registration", "profile_progress", "terms_accepted_version", "third_party_consent"] | wrap
+["name", "created", "updated", "last_request_time", "last_logout", "username", "first_name", "last_name", "display_name", "email", "birthday", "locale", "gender", "gender_details", "show_gender_details", "settings", "ethnicities", "sexual_orientation", "interview", "home_location", "current_location", "billing_location", "search_settings", "ab_test_assignment", "roles", "flags", "body_type", "religion", "network_user_id", "brand", "imperial_measurement_system", "registration", "profile_progress", "terms_accepted_version", "third_party_consent"] | wrap name
+let $a = ["name", "created", "updated", "last_request_time", "last_logout", "username", "first_name", "last_name", "display_name", "email", "birthday", "locale", "gender", "gender_details", "show_gender_details", "settings", "ethnicities", "sexual_orientation", "interview", "home_location", "current_location", "billing_location", "search_settings", "ab_test_assignment", "roles", "flags", "body_type", "religion", "network_user_id", "brand", "imperial_measurement_system", "registration", "profile_progress", "terms_accepted_version", "third_party_consent"] | wrap name; let $b = ["name", "created", "updated", "last_request_time", "last_logout", "username", "first_name", "last_name", "display_name", "email", "birthday", "locale", "gender", "show_gender", "gender_details", "show_gender_details", "settings", "ethnicities", "sexual_orientation", "interview", "home_location", "current_location", "billing_location", "search_settings", "ab_test_assignment", "roles", "flags", "body_type", "religion", "network_user_id", "brand", "imperial_measurement_system", "registration", "profile_progress", "terms_accepted_version", "third_party_consent"] | warp; $a | merge $b
+let $a = ["name", "created", "updated", "last_request_time", "last_logout", "username", "first_name", "last_name", "display_name", "email", "birthday", "locale", "gender", "gender_details", "show_gender_details", "settings", "ethnicities", "sexual_orientation", "interview", "home_location", "current_location", "billing_location", "search_settings", "ab_test_assignment", "roles", "flags", "body_type", "religion", "network_user_id", "brand", "imperial_measurement_system", "registration", "profile_progress", "terms_accepted_version", "third_party_consent"] | wrap name; let $b = ["name", "created", "updated", "last_request_time", "last_logout", "username", "first_name", "last_name", "display_name", "email", "birthday", "locale", "gender", "show_gender", "gender_details", "show_gender_details", "settings", "ethnicities", "sexual_orientation", "interview", "home_location", "current_location", "billing_location", "search_settings", "ab_test_assignment", "roles", "flags", "body_type", "religion", "network_user_id", "brand", "imperial_measurement_system", "registration", "profile_progress", "terms_accepted_version", "third_party_consent"] | wrap; $a | merge $b
+let $a = ["name", "created", "updated", "last_request_time", "last_logout", "username", "first_name", "last_name", "display_name", "email", "birthday", "locale", "gender", "gender_details", "show_gender_details", "settings", "ethnicities", "sexual_orientation", "interview", "home_location", "current_location", "billing_location", "search_settings", "ab_test_assignment", "roles", "flags", "body_type", "religion", "network_user_id", "brand", "imperial_measurement_system", "registration", "profile_progress", "terms_accepted_version", "third_party_consent"] | wrap name; let $b = ["name", "created", "updated", "last_request_time", "last_logout", "username", "first_name", "last_name", "display_name", "email", "birthday", "locale", "gender", "show_gender", "gender_details", "show_gender_details", "settings", "ethnicities", "sexual_orientation", "interview", "home_location", "current_location", "billing_location", "search_settings", "ab_test_assignment", "roles", "flags", "body_type", "religion", "network_user_id", "brand", "imperial_measurement_system", "registration", "profile_progress", "terms_accepted_version", "third_party_consent"] | wrap name; $a | merge $b
+let $a = ["name", "created", "updated", "last_request_time", "last_logout", "username", "first_name", "last_name", "display_name", "email", "birthday", "locale", "gender", "gender_details", "show_gender_details", "settings", "ethnicities", "sexual_orientation", "interview", "home_location", "current_location", "billing_location", "search_settings", "ab_test_assignment", "roles", "flags", "body_type", "religion", "network_user_id", "brand", "imperial_measurement_system", "registration", "profile_progress", "terms_accepted_version", "third_party_consent"] | wrap name; let $b = ["name", "created", "updated", "last_request_time", "last_logout", "username", "first_name", "last_name", "display_name", "email", "birthday", "locale", "gender", "show_gender", "gender_details", "show_gender_details", "settings", "ethnicities", "sexual_orientation", "interview", "home_location", "current_location", "billing_location", "search_settings", "ab_test_assignment", "roles", "flags", "body_type", "religion", "network_user_id", "brand", "imperial_measurement_system", "registration", "profile_progress", "terms_accepted_version", "third_party_consent"] | wrap foo; $a | merge $b
+v .
+go test -failfast ./...
+go test -failfast ./...
+v .
+gs
+git add .
+gcm "wip"
+git checkout main
+gl
+git checkout MRQ-5333
+git rebase main
+gs
+git add cmd/processor/main.go
+gs
+git add processor/*
+gs
+git add go.*
+gs
+git rebase --continue
+gs
+git add .
+git rebase --continue
+gs
+git add *
+gs
+git rebase --continue
+gs
+git log
+go test -failfast ./...
+gs
+v .
+git reset --soft HEAD~1
+gs
+git stash push --message "add settings functionality"
+gs
+git log
+git checkout main
+gl
+git branch --delete MRQ-5333
+git branch -D MRQ-5333
+git checkout -b MRQ-5333
+gs
+git stash show
+git stash apply
+v .
+v ,
+v .
+go test -failfast ./...
+# 261a37d2-da15-424a-a8a8-d3b3eda7c028<\n>with-env { ATUIN_LOG: error, ATUIN_QUERY: (commandline) } { commandline edit (run-external atuin search "--shell-up-key-binding" "--interactive"  e>| str trim) }
+go test -failfast ./...
+v .
+go test -failfast ./...
+atuin-upgrade
+config nu
+source $nu.config-path
+config nu
+source $nu.config-path
+cd ~/.local
+ls
+cd /Users/philippucke/.local/share
+ls
+cd /Users/philippucke/.local/share/nushell
+ls
+cd /Users/philippucke/.local/share/nushell/vendor/autoload
+ls
+cat atuin.nu 
+config nu
+source $nu.config-path
+cd /Users/philippucke/.config
+ls
+v .
+atuin 
+atuin server 
+go test -failfast ./...
+gs
+git diff
+v .
+go test -failfast ./...
+docker ps
+podman ps
+podman machine start
+docker ps
+v .
+gs
+git add .
+gs
+gcm "wip"
+gs
+git log
+gp
+cd /Users/philippucke/github.com/lovoo/php-backend
+v .
+cd /Users/philippucke/github.com/lovoo/profile
+cat README.md 
+ls
+cat docker-compose.yml 
+podman compose up
+v docker-compose.yml 
+git log
+git log --pretty=%h»¦«%s»¦«%aN»¦«%aE»¦«%aD -n 5 | lines | split column "»¦«" commit subject name email date | upsert date {|d| $d.date | into datetime}
+git log --pretty=%h»¦«%s»¦«%aN»¦«%aE»¦«%aD -n 5 | lines | split column "»¦«" commit subject name email date | upsert date {|d| $d.date | into datetime} | select 3 | get date | format date | get 0
+git log --pretty=%h»¦«%s»¦«%aN»¦«%aE»¦«%aD -n 5 | lines | split column "»¦«" commit subject name email date | upsert date {|d| $d.date | into datetime}
+git diff --help
+tldr git diff
+cd .config
+v .
+ls
+cd /Users/philippucke/github.com/lovoo/profile
+git diff main
+cat Makefile 
+make create-databases 
+podman compose up -d
+podman ps
+podman rm d282b7114925 
+python3
+podman-compose(1)
+podman-compose 
+v .
+podman create docker.io/google/cloud-sdk:latest
+podman ps
+podman run f2c08bab888d
+docker ps
+docker rm d282b7114925 
+podman images list
+podman images 
+podman images
+podman image prune 
+podman images
+podman image rm f2c08bab888d
+podman container 
+podman container list 
+podman container rm d282b7114925 
+docker stop d282b7114925 
+docker rm d282b7114925 
+docker container list
+podman image rm f2c08bab888d
+docker container rm 49a21f39e71c8c7b6cdc4d4ea23dd2d483f9e9b2cda9104d38774d4f9907b4b5
+podman image rm f2c08bab888d
+podman container list --external 
+podman container list --all 
+docker container stop b87f97dfe120
+docker container stop 742e5bfdac03
+docker container stop f2d271beb490
+podman container list --all
+docker container stop f2d271beb490
+docker container rm f2d271beb490
+docker container list
+docker container list --all
+podman images
+podman image rm f2c08bab888d 
+podman pull docker.io/google/cloud-sdk:latest
+podman pull google/cloud-sdk:489.0.0-stable
+podman login
+podman login --help
+podman login google.com
+podman logout
+podman ssh
+podman machine ssh 
+podman pull google/cloud-sdk:latest
+podman pull gcr.io/google.com/cloudsdktool/cloud-sdk:513.0.0-stable
+podman images
+podman run gcr.io/google.com/cloudsdktool/cloud-sdk:513.0.0-stable
+podman ps
+podman run gcr.io/google.com/cloudsdktool/cloud-sdk:emulators
+docker ps
+podman run
+podman run --help
+podman run gcr.io/google.com/cloudsdktool/cloud-sdk:emulators
+podman run --arch linux/arm64 gcr.io/google.com/cloudsdktool/cloud-sdk:emulators
+podman run --arch linux/amd64 gcr.io/google.com/cloudsdktool/cloud-sdk:emulators
+podman run --arch amd64 gcr.io/google.com/cloudsdktool/cloud-sdk:emulators
+podman ps
+podman stop 1517a6b3f87b 
+podman run --arch amd64 -i   gcr.io/google.com/cloudsdktool/cloud-sdk:emulators
+podman kill
+podman ps
+cat PubSubDockerfile 
+podman run --arch amd64 -it gcr.io/google.com/cloudsdktool/cloud-sdk:emulators
+podman ps
+cd /Users/philippucke/github.com/lovoo/picture
+cat docker-compose.yaml 
+v .
+cd -
+cd /Users/philippucke/github.com/lovoo/picture
+v .
+podman compose up
+podman compose up -d
+podman ps
+v .
+kubectx
+kubectl get namespaces
+kubectl get namespaces | detect
+kubectl get namespaces | detect columns 
+k get pods --all-namespaces -o w | detect columns
+k get pods --all-namespaces -o wide | detect columns
+k get pods --all-namespaces -o wide | detect columns | where name =~ 'geo'
+config nu
+source $nu.config-path
+kns
+v .
+go run ./cmd/profile/main.go
+v .
+go run ./cmd/profile/main.go --load-secrets=false
+go run ./cmd/profile
+go run ./cmd/profile --load-secrets=false
+DD_AGENT_HOST_IP=127.0.0.1 go run ./cmd/profile --load-secrets=false
+cat docker-compose.yml 
+cd /Users/philippucke/github.com/lovoo/php-backend
+echo 1 << 10
+1 | bits shr 10
+1 | bits shl 10
+^ 8 << 10
+^8 << 10
+^8 <<< 10
+3 bit-shl 4
+3 bit-shl 10
+1 bit-shl 10
+["settings_screensaver", true, 3] | transpose
+["settings_screensaver", true, 3] | table | transpose
+["settings_screensaver", true, 3] | table 
+[["name", "deprecated", "value"], ["settings_screensaver", true, 3]] | table
+[["name", "deprecated", "value"]; ["settings_screensaver", true, 3]] | table
+[["name", "deprecated", "value"]; ["settings_screensaver", true, 3]]
+[["name", "deprecated", "value"]; ["settings_screensaver", true, 3]] | update value {|row| 1 bit-shl $row.value} 
+(<\n>[["name", "deprecated", "value"]; ["settings_screensaver", true, 3]] | update value {|row| 1 bit-shl $row.value})
+(<\n>[<\n> ["name", "deprecated", "value"]; <\n> ["settings_screensaver", true, 3];<\n> ["settings_share_profile_disabled", true, 5];<\n> ["settings_radar_disabled", false, 6];<\n> ["settings_match_disbaled", true, 7];<\n> ["ads_gps_disabled", true, 8]<\n> ["ads_personalization_disabled", true, 9];<\n> ["hide_from_match", false, 10];<\n> ["messaging_allowed_from_matches", false, 11];<\n> ["vip_ghost", false, 0];<\n> ["vip_no_public", false, 1];<\n>]<\n>| update value {|row| 1 bit-shl $row.value})
+(<\n>[<\n> ["name", "deprecated", "value"]; <\n> ["settings_screensaver", true, 3];<\n> ["settings_share_profile_disabled", true, 5];<\n> ["settings_radar_disabled", false, 6];<\n> ["settings_match_disbaled", true, 7];<\n> ["ads_gps_disabled", true, 8];<\n> ["ads_personalization_disabled", true, 9];<\n> ["hide_from_match", false, 10];<\n> ["messaging_allowed_from_matches", false, 11];<\n> ["vip_ghost", false, 0];<\n> ["vip_no_public", false, 1];<\n>]<\n>| update value {|row| 1 bit-shl $row.value})
+(<\n>[<\n> ["name", "deprecated", "value"]; <\n> ["settings_screensaver", true, 3],<\n> ["settings_share_profile_disabled", true, 5],<\n> ["settings_radar_disabled", false, 6],<\n> ["settings_match_disbaled", true, 7],<\n> ["ads_gps_disabled", true, 8],<\n> ["ads_personalization_disabled", true, 9],<\n> ["hide_from_match", false, 10],<\n> ["messaging_allowed_from_matches", false, 11],<\n> ["vip_ghost", false, 0],<\n> ["vip_no_public", false, 1],<\n>]<\n>| update value {|row| 1 bit-shl $row.value})
+(<\n>[<\n> ["name", "deprecated", "value"]; <\n> ["settings_screensaver", true, 3],<\n> ["settings_share_profile_disabled", true, 5],<\n> ["settings_radar_disabled", false, 6],<\n> ["settings_match_disbaled", true, 7],<\n> ["ads_gps_disabled", true, 8],<\n> ["ads_personalization_disabled", true, 9],<\n> ["hide_from_match", false, 10],<\n> ["messaging_allowed_from_matches", false, 11],<\n> ["vip_ghost", false, 0],<\n> ["vip_no_public", false, 1],<\n>]<\n>| update value {|row| 1 bit-shl $row.value}<\n>| update name {|row| $row.name | str screaming-snake-case }<\n>)
+(<\n>[<\n> ["name", "deprecated", "value"]; <\n> ["settings_screensaver", true, 3],<\n> ["settings_share_profile_disabled", true, 5],<\n> ["settings_radar_disabled", false, 6],<\n> ["settings_match_disbaled", true, 7],<\n> ["ads_gps_disabled", true, 8],<\n> ["ads_personalization_disabled", true, 9],<\n> ["hide_from_match", false, 10],<\n> ["messaging_allowed_from_matches", false, 11],<\n> ["vip_ghost", false, 0],<\n> ["vip_no_public", false, 1],<\n>]<\n>| update value {|row| 1 bit-shl $row.value}<\n>| update name {|row| $row.name | str screaming-snake-case }<\n>| sort-by value<\n>)
+k port-forward pods/geolocation-cfb44f4d6-7ck8r 8082:8080
+v .
+DD_AGENT_HOST_IP=127.0.0.1 SERVICE_NAME=profile go run ./cmd/profile --load-secrets=false
+cd apis
+v .
+DD_AGENT_HOST_IP=127.0.0.1 SERVICE_NAME=profile go run ./cmd/profile --load-secrets=false
+k port-forward pods/geosearch-8644555ff-q47v9 8081:8080
+k port-forward pods/geolocation-cfb44f4d6-7ck8r 8082:8080
+gs
+git diff
+gs
+git restore config.yaml
+git diff
+gs
+git add internal/*
+gca
+git log --pretty=%h»¦«%s»¦«%aN»¦«%aE»¦«%aD -n 5 | lines | split column "»¦«" commit subject name email date | upsert date {|d| $d.date | into datetime}
+gca
+git log --pretty=%h»¦«%s»¦«%aN»¦«%aE»¦«%aD -n 5 | lines | split column "»¦«" commit subject name email date | upsert date {|d| $d.date | into datetime}
+gp --force
+v .
+cd apis
+git checkout main
+git checkout master
+g
+gl
+cd ~/.config
+v .
+cd apis
+gl
+git checkout -b MRQ-5396
+ls
+cd /Users/philippucke/Downloads
+ls
+ls | where name =~ Kanagawa
+mv `Kanagawa - no italics.json` ~/.config/zed/themes/
+v .
+gs
+git restore *
+gl
+git checkout master
+gl
+git checkout github
+cd ~
+cd /Users/philippucke/github.com
+mkdir feature-flag-experiment
+ls
+rm feature-flag-experiment/
+cd flagger
+git checkout main
+git checkout master
+gl
+kctx
+kns
+k get configmaps picture 
+k describe configmaps picture 
+k describe configmaps picture -o yaml | from yaml 
+k describe configmaps picture | from yaml 
+k describe configmaps picture
+k describe configmaps picture --filename config.yaml
+k get configmaps picture -o yaml
+k get configmaps picture -o yaml | from yaml 
+k get configmaps picture -o yaml | from yaml | select data | from yaml 
+k get configmaps picture -o yaml | from yaml 
+k get configmaps picture -o yaml | from yaml | get "data.config.yaml"
+k get configmaps picture -o yaml | from yaml | get data
+k get configmaps picture -o yaml | from yaml | get data | get config.yaml
+k get configmaps picture -o yaml | from yaml | get data | get 'config.yaml'
+k get configmaps picture -o yaml | from yaml | get data | get 'config.yaml' | from yaml 
+go test -failfast ./...
+k get configmaps picture -o yaml | from yaml | get data | get 'config.yaml' | from yaml
+go test -failfast ./...
+which gh
+brew upgrade gh
+gh extension install github/gh-copilot
+gh auth login
+gh extension upgrade gh-copilot<\n>
+gh extension install github/gh-copilot<\n>
+gh extensions ls 
+gh extensions browse 
+gh copilot config 
+gh copilot suggest "Generate a message to the team, remind them that during exhausting and stressful projects its highly beneficial to get some pause. Especially today they could enjoy the nice weather and charge up their batteries"
+argocd
+which argocd
+argocd --help
+argocd --help
+argocd app --help
+kctx 
+kns
+k rollout status deployments/profile -w
+k get deployments profile -o wide | detect columns 
+k describe deployments profile -o yaml | from yaml 
+k describe deployments profile | from yaml 
+k describe deployments profile 
+kctx
+k rollout status deployments/profile -w
+kctx
+k rollout status deployments/profile -w
+clear
+cd /Users/philippucke/github.com/pucke-dev/monkey-go
+cd /Users/philippucke/Downloads
+unzip waiig_code_1.3.zip 
+ls
+mv waiig_code_1.3/ ~/github.com/pucke-dev/monkey-go/
+cd ~/.config
+v .
+cd /Users/philippucke/.config/nvim
+v .
+v .
+cd apis
+gl
+jira-cli
+jira 
+jira issue list --assignee "Philipp Ucke" -s "In Progress"
+git checkout -b MRQ-5400
+v .
+gs
+git diff
+gs
+git restore lovoo/identity/v1/identity.proto
+git diff
+v .
+git rebase main
+git rebase master
+gl
+git diff
+git checkout master
+gl
+gs
+git restore .
+gs
+gl
+git branch -D MRQ-5400
+git checkout -b MRQ-5400
+v .
+git diff
+gs
+git add .
+gcm "add SuperUpdatePassword endpoint"
+gp
+kctx
+kns user
+k rollout status deployments/profile -w
+kctx 
+k rollout status deployments/profile -w
+kctx
+k rollout status deployments/profile -w
+v .
+gs
+git diff
+gs
+git add .
+gca
+gp --force
+cd /Users/philippucke/github.com/lovoo/picture
+gl
+kctx 
+g get deployments
+k get deployments profile -o wide | detect columns 
+k get deployments -o wide | detect columns
+k get services picture 
+k describe services picture
+k describe deployments picture
+k port-forward pods/picture-6974b7569f-2856f 9090:9090
+sudo lsof -i :9090
+sudo lsof -I :9090
+sudo lsof -i :9090
+sudo lsof -i 9090
+sudo lsof -i :9090
+curl http://localhost:9091/debug/pprof/profile?seconds=30
+curl http://localhost:9091/debug/pprof/profile?seconds=30 -o default.pgo
+l
+ls
+go tool pprof default.pgo 
+ls
+cat profile001.gif 
+open profile001.gif
+finder
+k port-forward pods/picture-6974b7569f-2856f 9091:9090
+ls
+go build ./cmd/server
+ls
+rm server
+ls
+gs
+cat cloudbuild.image.yaml 
+ls
+cat Dockerfile 
+git checkout -b PRODUCT-2973
+gs
+git add default.pgo
+gs
+cat default.pgo 
+gs
+gcm "add cpu profile for profile guided optimization"
+gp
+git checkout apis
+cd apis
+v .
+git diff
+gs
+git add .
+gca
+gp --force
+kctx
+k rollout status deployments/picture -w
+kctx
+k rollout status deployments/picture -w
+cd /Users/philippucke/github.com/lovoo/api-gateway
+gl
+cat docs/index.md 
+v .
+go run ./cmd/client/auth --addr=api-gateway.meetme.dev:443 --apikey=AIzaSyARxbV6gbvVDR44WxpIjmGkrMI0ARBoUGk 
+v .
+go run ./cmd/client/auth --addr=api-gateway.meetme.dev:443 --apikey=AIzaSyARxbV6gbvVDR44WxpIjmGkrMI0ARBoUGk
+v .
+go run ./cmd/client/auth --addr=api-gateway.meetme.dev:443 --apikey=AIzaSyARxbV6gbvVDR44WxpIjmGkrMI0ARBoUGk
+v .
+go run ./cmd/client/auth --addr=api-gateway.meetme.dev:443 --apikey=AIzaSyARxbV6gbvVDR44WxpIjmGkrMI0ARBoUGk
+cd /Users/philippucke/github.com/lovoo/identity-service
+git checkout master
+gl
+jira issue list --assignee "Philipp Ucke" -s "In Progress"
+git checkout -b MRQ-5404
+go get github.com/lovoo/go-genproto@latest
+cd /Users/philippucke/github.com/lovoo/php-backend
+gl
+cd /Users/philippucke/Library
+ls
+cd "Group Containters"
+ls
+cd /Users/philippucke/Library
+cd-core `Group Containers/`
+cd `Group Containers/`
+ls
+cd 2BUA8C4S2C.com.1password/
+cd 1Password/Data/logs
+ls
+cd Library/
+ls
+cd `Application Support/`
+ls
+cd 1Password
+ls
+cd Data
+ls
+cd logs
+ls
+cat 1Password_rCURRENT.log 
+cd /Users/philippucke/github.com/lovoo/php-backend
+gl
+cd /Users/philippucke/github.com/lovoo/identity-service
+gl
+git checkout master
+gl
+gs
+git checkout develop
+git restore .
+git checkout develop
+gl
+git checkout MRQ-5404
+git rebase develop
+git log
+go get github.com/lovoo/go-genproto@latest
+v.
+v .
+go test -failfast ./...
+v .
+go test -failfast 
+go test -failfast ./...
+gs
+git diff
+gs
+git add .
+gcm "implement SuperUpdatePassword"
+gp
+cd /Users/philippucke/github.com/lovoo/api-gateway
+go run ./cmd/client/auth --addr=api-gateway.meetme.dev:443 --apikey=AIzaSyARxbV6gbvVDR44WxpIjmGkrMI0ARBoUGk
+cd /Users/philippucke/github.com/pucke-dev/monkey-go
+l
+ls
+go test -failfast ./...
+ls
+go test ./...
+go test -skip waiig ./...
+go test -skip=waiig ./...
+go test ./parser
+v .
+gs
+cd /Users/philippucke/github.com/lovoo/identity-service
+go test ./...
+v .
+gs
+go test ./...
+gs
+git diff
+gs
+git add .
+gca
+gp --force
+go mod tidy
+gs
+git add .
+gca
+gp --force
+git checkout develop
+gl
+git checkout MRQ-5404
+git rebase develop
+gs
+v .
+go mod tidy
+gs
+go test ./...
+git add .
+git rebase --continue
+git log --pretty=%h»¦«%s»¦«%aN»¦«%aE»¦«%aD -n 5 | lines | split column "»¦«" commit subject name email date | upsert date {|d| $d.date | into datetime}
+gs
+gp --force
+v .
+go test ./...
+v .
+go test ./...
+v .
+go test ./...
+git reflog
+git reset --soft 7ffec6d7469a567312464ef787ed9eb924e6c22a
+gs
+git rebase develop
+gs
+go mod tidy
+gs
+v go.sum 
+git diff
+go mod tidy
+gs
+git restore go.sum
+git add go.sum
+gs
+git rebase --continue
+gs
+git diff
+gs
+git restore internal/handler/mocks/email_storage.go
+gs
+v internal/handler/mocks/email_storage.go 
+gs
+git add internal/handler/mocks/email_storage.go
+gs
+git rebase --continue
+git diff
+gs
+git diff --staged 
+gs
+git restore --staged internal/migration/mocks/*
+gs
+git restore --staged internal/migration/spanner_v2/*
+gs
+git restore .
+gs
+git diff --staged
+gs
+git restore --staged .
+gs
+git restore .
+gs
+gl
+gs
+git reset --hard 7ffec6d7469a567312464ef787ed9eb924e6c22a
+gs
+v .
+go mod tidy
+go test ./...
+gs
+git add .
+gca
+gp --force
+git checkout develop
+gl
+git checkout MRQ-5404
+git rebase develop
+gs
+go mod tidy
+gs
+git rebase --continue
+gs
+gp --force
+cd /Users/philippucke/.config
+ls
+cd-core nushell
+cd nushell
+ls
+cd ..
+cd /Users/philippucke/.config/nushell
+ls
+argocd
+argocd app list
+argocd login
+argocd login argocd.lovoo.io --sso
+argocd app list
+argocd app list --grpc-web
+argocd app list --grpc-web | detect columns 
+source argocd.nu
+argo-list-apps 
+argo-list-apps | where namespace == user
+source argocd.nu
+argo-list-apps --namespace user
+source argocd.nu
+argo-list-apps --namespace user
+source argocd.nu
+argo-list-apps --namespace user
+argo-list-apps | where namespace == user
+argo-list-apps --namespace user
+argo-list-apps --namespace=user
+source argocd.nu
+argo-list-apps --namespace=user
+source argocd.nu
+argo-list-apps --namespace=user
+source argocd.nu
+argo-list-apps --namespace=user
+source argocd.nu
+argo-list-apps --namespace=user
+source argocd.nu
+argo-list-apps --namespace=user
+argo-list-apps
+source argocd.nu
+argo-list-apps
+source argocd.nu
+argo-list-apps
+argo-list-apps --namespace user
+source argocd.nu
+argo-list-apps --namespace user
+argo-list-apps --namespace user --project tagged 
+argo-list-apps --namespace user --project tagged-dev
+source argocd.nu
+argo-list-apps --namespace user --project tagged
+source argocd.nu
+argo-list-apps --namespace user --project tagged
+ast "" =~ "ffo"
+ast | "" =~ "ffo"
+"foobar" =~ "foo"
+"foobar" =~ "foo" | ast
+"foobar" =~ "foo" | describe
+"foobar" =~ "foo" | inspect
+"foobar" =~ "foo" | into value 
+ast
+ast --help
+ast '"foobar" =~ "foo"'
+source argocd.nu
+argo-list-apps --namespace user --project tagged
+argo-list-apps --namespace user --project tagged-dev
+source argocd.nu
+argo-list-apps --namespace user --project tagged-dev
+source argocd.nu
+argo-list-apps --namespace user --project tagged-dev
+v .
+ls
+cat argocd.nu 
+source argocd.nu
+argo-list-apps --namespace user --project tagged-dev
+source argocd.nu
+argo-list-apps --namespace user --project tagged-dev
+source argocd.nu
+argo-list-apps --namespace user --project tagged-dev
+ls
+rm argocd.nu
+ls
+argocd 
+argocd app list --grpc-web | detect columns 
+argocd app list --grpc-web | detect columns | where namespace =~ user
+argocd app list --grpc-web | detect columns | where namespace =~ "user"
+argocd app list --grpc-web | detect columns | where namespace == user
+argocd app list --grpc-web | detect columns | where namespace == user | where project == lovoo-dev
+argocd app list --grpc-web | detect columns | where namespace == user | where project == lovoo-dev | where status == OutOfSync
+argocd app --help
+argocd app list --grpc-web | detect columns | where namespace == user | where project == lovoo-dev | where status == OutOfSync
+argocd app diff profile.user.lovoo-dev
+argocd app diff verification-service.user.lovoo-dev
+k describe configmaps profile
+kctx
+k describe configmaps profile
+cd /Users/philippucke/github.com/lovoo/profile
+git checkout main
+gl
+v .
+cd /Users/philippucke/github.com/lovoo
+cd events-importer
+ls
+gl
+go install github.com/GoogleCloudPlatform/protoc-gen-bq-schema@latest<\n>
+ls
+cat apis-revision 
+cat Makefile Dockerfile 
+cat Makefile
+make update-apis
+go install google.golang.org/protobuf/cmd/protoc-gen-go@latest<\n>
+go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest<\n>
+make update-apis
+cat Makefile
+make compare-schemas
+cd /Users/philippucke/github.com
+ls
+mkdir hacks
+cd hacks
+go mod init
+go mod init main
+go run main.go
+go build .
+go run main.go -ldflags "-checklinkname=0"
+go run -ldflags "-checklinkname=0" main.go
+go build -ldflags "-checklinkname=0" .
+go build -ldflags=-checklinkname=0 .
+CGO_ENABLED=0 go build -ldflags=-checklinkname=0 .
+CGO_ENABLED=1 go build -ldflags=-checklinkname=0 .
+v .
+cd ..
+rm -rf hacks
+argocd app list --grpc-web | detect columns | where namespace == user | where project == lovoo-dev | where status == OutOfSync
+argocd app list --grpc-web | detect columns | where namespace == user | where project == lovoo-dev | where status == OutOfSync | where name =~ 'identity'
+argocd app list --grpc-web | detect columns | where project == lovoo-dev | where status == OutOfSync | where name =~ 'identity'
+argocd app diff identity.user.lovoo-dev
+argocd app sync identity.user.lovoo-dev
+k get pods identity-696d8b8478-z5ts2 
+k get pods identity-7b4d887888-cgpqr 
+k get pods identity-696d8b8478-z5ts2
+argocd app list --grpc-web | detect columns | where status == OutOfSync | where name =~ 'identity'
+argocd app diff identity.user.meetme-dev
+k get pods identity-696d8b8478-z5ts2 -w
+k rollout status deployments/identity  -w
+kctx
+k rollout status deployments/identity  -w
+argocd app sync identity.user.meetme-dev
+k get pods identity-59c4fcd88d-2dbb4 -w
+argocd app diff identity.user.tagged-dev
+k get pods identity-f4c79dffd-zk6k6 -w
+argocd app sync identity.user.tagged-dev
+kctx
+k rollout status deployments/identity  -w
+argocd app list --grpc-web | detect columns | where status == OutOfSync | where name =~ 'identity'
+cd lovoo
+cd /Users/philippucke/github.com/lovoo/api-gateway
+go run ./cmd/client/auth --addr=api-gateway.lovoo.dev:443 --apikey=AIzaSyBdLEQ7o7uG4P0RgMiPXukqWQl-UhXAFp4
+gl
+gs
+cd "$XDG_DATA_HOME"
+ls
+cd ..
+rm "$XDG_DATA_HOME"
+rm -rf "$XDG_DATA_HOME"
+ls
+gs
+cd ~
+ls
+cd "$HOME"
+ls
+cd ..
+rm -rf "$HOME"
+ls
+cd /Users/philippucke/github.com/lovoo/api-gateway
+ls
+vs
+cd ident
+v .
+cd tripsnap
+gs
+v .
+go mod tidy
+ls
+touch tripsnap.proto
+ls
+v .
+protoc 
+protoc --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative tripsnap.proto
+cd ..
+ls
+cd /Users/philippucke/github.com/lovoo
+ls
+cd ..
+ls
+cd /Users/philippucke/github.com/googleapis
+gl
+cd tripsnap
+protoc -I ../../googleapis/ --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative tripsnap.proto
+protoc -I . -I ../../googleapis/ --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative tripsnap.proto
+ls
+v .
+go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
+v .
+protoc -I . -I ../../googleapis/ --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative tripsnap.proto
+v .
+v 
+v .
+protoc -I . -I ../../googleapis/ --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative tripsnap.proto
+protoc -I . -I ../../googleapis/ --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative --experimental-editions tripsnap.proto
+protoc -I . -I ../../googleapis/ --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative --experimental_editions tripsnap.proto
+protoc --help
+protoc --experimental_editions
+protoc -I . -I ../../googleapis/ --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative --experimental_editions tripsnap.proto
+protoc --experimental_editions -I . -I ../../googleapis/ --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative tripsnap.proto
+protc --v
+protc --version
+protoc --version
+brew upgrade protobuf
+v .
+protoc -I . -I ../../googleapis/ --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative tripsnap.proto
+v .
+cd ..
+ls
+mkdir protoc-gen-resource-helper
+cd protoc-gen-resource-helper
+go mod init github.com/pucke-dev/protoc-gen-resource-helper
+v .
+ls
+v .
+go mod tidy
+go install . && protoc --go_out=. --go_opt=paths=source_relative --go-resource_helper_out=. --go-resource_helper_opt=paths=source_relative example.proto
+go install .; protoc --go_out=. --go_opt=paths=source_relative --go-resource_helper_out=. --go-resource_helper_opt=paths=source_relative example.proto
+v .
+go install .; protoc --go_out=. --go_opt=paths=source_relative --go-resource_helper_out=. --go-resource_helper_opt=paths=source_relative example.proto
+go install .; protoc -I . -I ../../googleapis/ --go_out=. --go_opt=paths=source_relative --go-resource_helper_out=. --go-resource_helper_opt=paths=source_relative example.proto
+v .
+go install .; protoc -I . -I ../../googleapis/ --go_out=. --go_opt=paths=source_relative --go-resource_helper_out=. --go-resource_helper_opt=paths=source_relative example.proto
+go install .
+which go
+which protoc
+which protoc-gen-grpc-gateway 
+ls ~/go/bin/
+v .
+cd /Users/philippucke/github.com/carapace-bin
+cd -
+go install
+protoc-gen-resource-helper
+cat go.mod
+go install github.com/pucke-dev/protoc-gen-resource-helper
+go get -u .; protoc -I . -I ../../googleapis/ --go_out=. --go_opt=paths=source_relative --go-resource_helper_out=. --go-resource_helper_opt=paths=source_relative example.proto
+go get -u github.com/pucke-dev/protoc-gen-resource-helper; protoc -I . -I ../../googleapis/ --go_out=. --go_opt=paths=source_relative --go-resource_helper_out=. --go-resource_helper_opt=paths=source_relative example.proto
+v .
+rm go.*
+ls
+cd ..
+mv protoc-gen-resource-helper/ protoc-gen-go-resource-helper
+cd protoc-gen-go-resource-helper
+ls
+go mod init protoc-gen-go-resource-helper
+go mod tidy
+v .
+go mod tidy
+go get -u protoc-gen-go-resource-helper/cmd/protoc-gen-go-resource-helper; protoc -I . -I ../../googleapis/ --go_out=. --go_opt=paths=source_relative --go-resource_helper_out=. --go-resource_helper_opt=paths=source_relative example.proto
+go install .
+go install ./cmd/protoc-gen-go-resource-helper
+protoc-gen-go-resource-helper 
+protoc -I . -I ../../googleapis/ --go_out=. --go_opt=paths=source_relative --go-resource_helper_out=. --go-resource_helper_opt=paths=source_relative example.proto
+protoc -I . -I ../../googleapis/ --go_out=. --go_opt=paths=source_relative --go-resource-helper_out=. --go-resource-helper_opt=paths=source_relative example.proto
+ls
+v .
+go mod tidy
+v .
+go install ./cmd/protoc-gen-go-resource-helper
+protoc -I . -I ../../googleapis/ --go_out=. --go_opt=paths=source_relative --go-resource-helper_out=. --go-resource-helper_opt=paths=source_relative example.proto
+v .
+go install ./cmd/protoc-gen-go-resource-helper
+protoc -I . -I ../../googleapis/ --go_out=. --go_opt=paths=source_relative --go-resource-helper_out=. --go-resource-helper_opt=paths=source_relative example.proto
+v .
+go install ./cmd/protoc-gen-go-resource-helper
+protoc -I . -I ../../googleapis/ --go_out=. --go_opt=paths=source_relative --go-resource-helper_out=. --go-resource-helper_opt=paths=source_relative example.proto
+v .
+go install ./cmd/protoc-gen-go-resource-helper
+protoc -I . -I ../../googleapis/ --go_out=. --go_opt=paths=source_relative --go-resource-helper_out=. --go-resource-helper_opt=paths=source_relative example.proto
+v .
+go install ./cmd/protoc-gen-go-resource-helper
+protoc -I . -I ../../googleapis/ --go_out=. --go_opt=paths=source_relative --go-resource-helper_out=. --go-resource-helper_opt=paths=source_relative example.proto
+v .
+cd identity
+v .
+git checkout main
+git checkout develop
+gl
+cd /Users/philippucke/.config
+ls
+cd dotfiles
+ls
+cd nvim
+ls
+git submodule add https://github.com/pucke-dev/kickstart.nvim nvim_new
+git submodule update --init --recursive
+ls
+git submodule deinit
+git submodule deinit --all
+gs
+rm -rf nvim_new/
+git submodule deinit --all
+cd ..
+ls
+git submodule add https://github.com/pucke-dev/kickstart.nvim nvim_new
+git submodule update --init --recursive
+ls
+cd /Users/philippucke/.config/nvim_new
+cd nvim_new
+ls
+gs
+git log
+cd ..
+ls
+gs
+cd /Users/philippucke/.config/nvim
+ls
+rm -rf nvim_new/
+cd ..
+ls
+cd /Users/philippucke/github.com/pucke-dev/dotfiles
+ls
+cd nvim
+ls
+cd ..
+ls
+ls -al
+cat .gitmodules 
+v .
+gs
+ls
+rm -rf '$XDG_DATA_HOME'
+ls
+gs
+git add .gitmodules
+git add nvim/nvim_new
+ls
+gs
+gcm "add git submodule for kickstart.nvim"
+gs
+ls
+stow .
+cd ~
+NVIM_NAME=nvim_new nvim
+cd /Users/philippucke/.config
+ls
+NVIM_APPNAME=nvim_new nvim
+cd picture
+cd dotfiles
+NVIM_APPNAME=nvim_new nvim
+ls
+cd nvim_new
+NVIM_APPNAME=nvim_new nvim
+v .
+cd ~
+NVIM_APPNAME=nvim_new nvim
+cd ~
+NVIM_APPNAME=nvim_new nvim
+cd .config
+cd dotfiles
+ls
+NVIM_APPNAME=nvim_new nvim
+v .
+NVIM_APPNAME=nvim_new nvim
+v .
+NVIM_APPNAME=nvim_new nvim
+v .
+NVIM_APPNAME=nvim_new nvim
+cd apis
+git checkout main
+git checkout master
+gl
+git checkout -b MRQ-5406
+NVIM_APPNAME=nvim_new nvim .
+gs
+git diff
+git add .
+gcm "add private profile setting"
+gp
+git checkout master
+gl
+git checkout -b MRQ-5407
+NVIM_APPNAME=nvim_new nvim .
+gs
+git diff
+git add .
+gcm "remove private profile flag"
+gp
+cd dotfiles
+NVIM_APPNAME=nvim_new nvim .
+gs
+NVIM_APPNAME=nvim_new nvim .
+cd apis
+git rebase MRQ-5406
+git checkout -b MRQ-5409
+NVIM_APPNAME=nvim_new nvim .
+v .
+make lint
+v 
+make lint
+make fmt
+make format
+v .
+make fmt
+make format
+make lint
+git diff
+gs
+git add .
+gs
+gcm "introduce profile variants"
+gp
+cat Makefile 
+make generate-backend 
+go install github.com/sorcererxw/protoc-gen-go-grpc-mock@latest<\n>
+go install github.com/sorcererxw/protoc-gen-go-grpc-mock@latest
+v Makefile 
+make docker-build 
+podman build -t eu.gcr.io/lovoo-ci/buf:latest .
+make docker-start 
+podman run -it --rm -v /Users/philippucke/github.com/lovoo/apis:/workspace -w /workspace --entrypoint bash eu.gcr.io/lovoo-ci/buf:latest
+ls
+v .
+podman run -it --rm -v /Users/philippucke/github.com/lovoo/apis:/workspace -w /workspace --entrypoint bash eu.gcr.io/lovoo-ci/buf:latest
+ls
+v .
+gs
+v .
+gs
+v .
+git log
+git rebase -i HEAD~3
+git log
+gs
+gp --force
+gl
+git log
+git rebase -i HEAD~5
+gl
+git pull --rebase
+git log
+git log --pretty=%h»¦«%s»¦«%aN»¦«%aE»¦«%aD -n 5 | lines | split column "»¦«" commit subject name email date | upsert date {|d| $d.date | into datetime}
+git rebase -i HEAD~4
+git reflog
+git log --pretty=%h»¦«%s»¦«%aN»¦«%aE»¦«%aD -n 5 | lines | split column "»¦«" commit subject name email date | upsert date {|d| $d.date | into datetime}
+gp --force
+make lint
+make format 
+gs
+cd /Users/philippucke/github.com
+ls
+cd /Users/philippucke/github.com/fake-fls
+ls
+cat main.go 
+cd ..
+ls
+cd /Users/philippucke/github.com/neovim
+ls
+cd ..
+ls
+cd /Users/philippucke/github.com/pucke-dev/protoc-gen-go-resource-helper
+ls
+cd lovoo
+cd /Users/philippucke/github.com/lovoo/go-api-resource
+git checkout master
+gl
+v.
+cd github
+git clone git@github.com:ucarion/protoc-gen-go-resource.git
+v .
+cd protoc-gen-go-resource
+ls
+v .
+ls
+v .
+protoc -I . -I ../../googleapis/ --go_out=. --go_opt=paths=source_relative --go-resource-helper_out=. --go-resource-helper_opt=paths=source_relative example.proto
+v .
+make generate 
+make generate
+go install .
+protoc -I . -I ../../googleapis/ --go_out=. --go_opt=paths=source_relative --go-resource-helper_out=. --go-resource-helper_opt=paths=source_relative example.proto
+go get -u protoc-gen-go-resource-helper/cmd/protoc-gen-go-resource-helper; protoc -I . -I ../../googleapis/ --go_out=. --go_opt=paths=source_relative --go-resource_helper_out=. --go-resource_helper_opt=paths=source_relative example.proto
+go install ./cmd/protoc-gen-go-resource-helper
+protoc -I . -I ../../googleapis/ --go_out=. --go_opt=paths=source_relative --go-resource-helper_out=. --go-resource-helper_opt=paths=source_relative example.proto
+v .
+make generate
+cat example_resource.go 
+make generate
+cat example_resource.go 
+make generate
+cat example_resource.go
+go mod tidy
+make generate
+go mod tidy
+gl
+go get github.com/lovoo/go-genproto@latest
+go mod tidy
+make generate
+go mod tidy
+make generate
+go install github.com/lasorda/protobuf-language-server@latest<\n>
+make generate
+go mod tidy
+make generate
+cd /Users/philippucke/github.com/lovoo/php-backend
+gl
+v .
+git checkout MRQ-5397-new-settings
+gl
+v .
+gcd
+git checkout develop
+gl
+cd api-gateway
+NVIM_APPNAME=nvim_new nvim .
+NVIM_APPNAME=nvim_new nvim .
+cd .config
+cd /Users/philippucke/.config/nvim_new
+v .
+NVIM_APPNAME=nvim_new nvim .
+NVIM_APPNAME=nvim_new nvim --version
+cd github
+ls
+cd neovim
+ls
+git checkout tags/v0.11.0
+git checkout v0.11.0
+gl
+git checkout v0.11.0
+make CMAKE_BUILD_TYPE=RelWithDebInfo
+sudo make install
+xcode-select --install<\n>
+brew install ninja cmake gettext curl<\n>
+make CMAKE_BUILD_TYPE=RelWithDebInfo
+ls
+cd ~
+ls
+ls -a;
+ls -al
+cd .local
+l
+ls
+cd bin
+ls
+which nvim
+rm /usr/local/bin/nvim
+sudo rm /usr/local/bin/nvim
+cd nvim
+cd gitub
+cd github
+cd nvim
+cd github
+ls
+cd neovim
+make CMAKE_BUILD_TYPE=RelWithDebInfo
+cd ..
+rm -rf neovim/
+sudo rm -rf neovim/
+ls
+brew install neovom
+brew install neovim
+neovim --version
+neovim
+which neovim
+brew list 
+cd ~
+neovim
+cd /Users/philippucke/.config
+ls
+cd /Users/philippucke/.config/nushell
+ls
+v .
+which v
+type v
+alias
+which alias
+scope aliases
+v
+nvim
+NVIM_APPNAME=nvim_new nvim --version
+v .
+NVIM_APPNAME=nvim_new nvim --version
+NVIM_APPNAME=nvim_new nvim
+go test ./...
+cd dotfiles
+cd dotfiles
+ls
+v .
+cd /Users/philippucke/github.com/pucke-dev/dotfiles/nvim
+v .
+cd /Users/philippucke/github.com/pucke-dev/dotfiles/nvim_new
+v .
+cd /Users/philippucke/github.com/pucke-dev/dotfiles/nvim
+v .
+cd api-gateway
+v .
+cd -
+v .
+cd api-gateway
+v .
+v .
+ls
+cd ..
+rm -rf nvim_new
+ls
+gs
+git add nvim/*
+gs
+git add nvim_new
+gs
+gcm "update nvim config with kickstart.nvim ideas"
+gp
+gs
+git diff
+gs
+git add atuin/config.toml
+gcm "exclude atuin command from history"
+gs
+git dff
+gs
+git add ghostty/config
+gcm "add startup envs & use nushell"
+gs
+gp
