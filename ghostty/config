@@ -1,8 +1,15 @@
+## General
+
+auto-update-channel = tip
+
+env = XDG_CONFIG_HOME=/Users/philippucke/.config
+command = /opt/homebrew/bin/nu
+
 ## Theme & Styling
 
 theme = Kanagawa Wave
 
-background-opacity = 0.7
+background-opacity = 0.8
 background-blur-radius = 20 
 
 mouse-hide-while-typing = true
