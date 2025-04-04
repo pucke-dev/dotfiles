@@ -1,29 +1,41 @@
 return {
     {
         "folke/trouble.nvim",
-        opts = {}, -- for default options, refer to the configuration section for custom setup.
+        opts = {
+            modes = {
+                workspace_diagnostics = {
+                    mode = 'diagnostics',
+                    filter = {
+                        any = {
+                            buf = 0, -- current buffer
+                            {
+                                function(item)
+                                    return item.filename:find((vim.loop or vim.uv).cwd(), 1, true)
+                                end,
+                            }
+                        },
+                    },
+                },
+            },
+        },
         cmd = "Trouble",
         keys = {
             {
-                "<leader>sD",
-                "<cmd>Trouble diagnostics toggle<cr>",
-                desc = "[S]how [D]iagnostics (Trouble)",
+                '<leader>xx',
+                '<cmd>Trouble workspace_diagnostics toggle<cr>',
+                desc = 'Workspace Diagnostics (Trouble)',
             },
             {
-                "<leader>sd",
-                "<cmd>Trouble diagnostics toggle focus=true filter.buf=0<cr>",
-                desc = "[S]how Buffer [D]iagnostics (Trouble)",
+                '<leader>xX',
+                '<cmd>Trouble diagnostics toggle filter.buf=0<cr>',
+                desc = 'Buffer Diagnostics (Trouble)',
             },
-            {
-                "<leader>ss",
-                "<cmd>Trouble symbols toggle focus=true<cr>",
-                desc = "[S]how [S]ymbols in buffer. Nice to get an overview of the file structure.",
-            },
-            {
-                "<leader>sdri",
-                "<cmd>Trouble lsp toggle focus=true win.position=right<cr>",
-                desc = "[S]how LSP [D]efinitions / [R]eferences / [I]mplementations (Trouble)",
-            },
+            -- IDK if this is useful
+            -- {
+            --     "<leader>sdri",
+            --     "<cmd>Trouble lsp toggle focus=true win.position=right<cr>",
+            --     desc = "[S]how LSP [D]efinitions / [R]eferences / [I]mplementations (Trouble)",
+            -- },
         },
     }
 }

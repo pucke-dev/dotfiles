@@ -1,11 +1,32 @@
 ---@diagnostic disable: missing-fields
 return {
     {
+        'nvim-treesitter/nvim-treesitter-context',
+        opts = {
+            enable = true,
+        },
+    },
+    {
         "nvim-treesitter/nvim-treesitter-textobjects",
         event = "VeryLazy",
         enabled = true,
         config = function()
-            require("nvim-treesitter.configs").setup({})
+            require("nvim-treesitter.configs").setup({
+                textobjects = {
+                    select = {
+                        enable = true,
+                        lookahead = true,
+                        keymaps = {
+                            ["af"] = "@function.outer",
+                            ["if"] = "@function.inner",
+                            ["ac"] = "@class.outer",
+                            ["ic"] = "@class.inner",
+                            ["al"] = "@loop.outer",
+                            ["il"] = "@loop.inner",
+                        },
+                    },
+                },
+            })
         end
     },
     {
@@ -16,8 +37,8 @@ return {
         build = ":TSUpdate",
         config = function()
             require 'nvim-treesitter.configs'.setup {
-                ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline" },
-                auto_install = false,
+                ensure_installed = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc' },
+                auto_install = true,
                 highlight = {
                     enable = true,
                     disable = function(lang, buf)

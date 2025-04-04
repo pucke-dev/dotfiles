@@ -2,7 +2,16 @@ return {
     {
         "folke/which-key.nvim",
         event = "VeryLazy",
-        opts = {},
+        opts = {
+            delay = 0,
+            icons = {
+                mappings = vim.g.have_nerd_font,
+            },
+        },
+        spec = {
+            { '<leader>c', group = '[C]ode', mode = { 'n', 'x' } },
+            { '<leader>f', group = '[F]ind' },
+        },
         keys = {
             {
                 "<leader>?",

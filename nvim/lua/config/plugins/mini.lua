@@ -2,21 +2,23 @@ return {
     {
         "echasnovski/mini.nvim",
         config = function()
-            require "mini.statusline".setup { use_icons = true }
+            local statusline = require "mini.statusline"
+            statusline.setup { use_icons = vim.g.have_nerd_font }
+            statusline.section_location = function()
+                return '%2l:%-2v'
+            end
 
             require "mini.ai".setup()
-
             require "mini.comment".setup()
-
             require "mini.operators".setup()
-
             require "mini.pairs".setup()
-
-            require "mini.splitjoin".setup()
-
+            require "mini.bracketed".setup()
             require "mini.surround".setup()
 
-            require "mini.bracketed".setup()
+            -- Have to evaluate if that is needed
+            -- Keymap: gS
+            require "mini.splitjoin".setup()
+
 
 
             require "mini.hipatterns".setup({
