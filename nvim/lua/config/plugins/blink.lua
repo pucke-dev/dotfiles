@@ -4,10 +4,8 @@ return {
         event = 'VimEnter',
         version = '1.*',
         dependencies = {
-            -- Snippet Engine
-            -- todo
             'folke/lazydev.nvim',
-            -- 'MeandeingProgrammer/render-markdown.nvim',
+            'L3MON4D3/LuaSnip',
         },
         --- @module 'blink.cmp'
         --- @type blink.cmp.Config
@@ -24,6 +22,9 @@ return {
                     auto_show = true,
                     auto_show_delay_ms = 100,
                 },
+            },
+            snippets = {
+                preset = 'luasnip',
             },
             sources = {
                 default = { 'lsp', 'path', 'snippets', 'lazydev', 'buffer' },
