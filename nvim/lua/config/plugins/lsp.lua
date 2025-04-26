@@ -11,133 +11,78 @@ return {
         },
     },
     {
-        'neovim/nvim-lspconfig',
+        "neovim/nvim-lspconfig",
         dependencies = {
-            { 'williamboman/mason.nvim', opts = {} },
-            'williamboman/mason-lspconfig.nvim',
-            'WhoIsSethDaniel/mason-tool-installer.nvim',
+            { "williamboman/mason.nvim", opts = {} },
+            "williamboman/mason-lspconfig.nvim",
+            "WhoIsSethDaniel/mason-tool-installer.nvim",
 
             -- Useful status updates for LSP.
-            { 'j-hui/fidget.nvim',       opts = {} },
+            { "j-hui/fidget.nvim", opts = {} },
 
             -- Allows extra capabilities provided by blink.cmp
-            'saghen/blink.cmp',
+            "saghen/blink.cmp",
         },
         config = function()
-            vim.api.nvim_create_autocmd('LspAttach', {
-                group = vim.api.nvim_create_augroup('kickstart-lsp-attach', { clear = true }),
+            vim.api.nvim_create_autocmd("LspAttach", {
+                group = vim.api.nvim_create_augroup("kickstart-lsp-attach", { clear = true }),
                 callback = function(event)
                     local map = function(keys, func, desc, mode)
-                        mode = mode or 'n'
-                        vim.keymap.set(mode, keys, func, { buffer = event.buf, desc = 'LSP: ' .. desc })
+                        mode = mode or "n"
+                        vim.keymap.set(mode, keys, func, { buffer = event.buf, desc = "LSP: " .. desc })
                     end
                     -- Keymaps
 
                     -- Jump to the definition of the word under your cursor.
                     --  This is where a variable was first declared, or where a function is defined, etc.
                     --  To jump back, press <C-t>.
-                    map('gd', '<cmd>lua Snacks.picker.lsp_definitions()<cr>', '[G]oto [D]efinition')
+                    map("gd", "<cmd>lua Snacks.picker.lsp_definitions()<cr>", "[G]oto [D]efinition")
 
                     -- WARN: This is not Goto Definition, this is Goto Declaration.
                     --  For example, in C this would take you to the header.
-                    map('gD', '<cmd>lua Snacks.picker.lsp_declarations()<cr>', '[G]oto [D]eclaration')
+                    map("gD", "<cmd>lua Snacks.picker.lsp_declarations()<cr>", "[G]oto [D]eclaration")
 
                     -- Find references for the word under your cursor.
-                    map('gr', '<cmd>lua Snacks.picker.lsp_references()<cr>', '[G]oto [R]eferences')
+                    map("gr", "<cmd>lua Snacks.picker.lsp_references()<cr>", "[G]oto [R]eferences")
 
                     -- Jump to the implementation of the word under your cursor.
                     --  Useful when your language has ways of declaring types without an actual implementation.
-                    map('gI', '<cmd>lua Snacks.picker.lsp_implementations()<cr>', '[G]oto [I]mplementation')
+                    map("gI", "<cmd>lua Snacks.picker.lsp_implementations()<cr>", "[G]oto [I]mplementation")
 
                     -- Jump to the type of the word under your cursor.
                     --  Useful when you're not sure what type a variable is and you want to see
                     --  the definition of its *type*, not where it was *defined*.
-                    map('gy', '<cmd>lua Snacks.picker.lsp_type_definitions()<cr>', '[G]oto [T]ype Definition')
+                    map("gy", "<cmd>lua Snacks.picker.lsp_type_definitions()<cr>", "[G]oto [T]ype Definition")
 
                     -- Fuzzy find all the symbols in your current document.
                     --  Symbols are things like variables, functions, types, etc.
-                    map('<leader>fs', '<cmd>lua Snacks.picker.lsp_symbols()<cr>', '[F]ind [S]ymbol')
+                    map("<leader>fs", "<cmd>lua Snacks.picker.lsp_symbols()<cr>", "[F]ind [S]ymbol")
 
                     -- Fuzzy find all the symbols in your current workspace.
                     --  Similar to document symbols, except searches over your entire project.
-                    map('<leader>fS', '<cmd>lua Snacks.picker.lsp_workspace_symbols()<cr>', '[F]ind Workspace [S]ymbol')
+                    map("<leader>fS", "<cmd>lua Snacks.picker.lsp_workspace_symbols()<cr>", "[F]ind Workspace [S]ymbol")
 
-                    map('<leader>rn', vim.lsp.buf.rename, '[R]e[n]ame')
-                    map('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction')
-
-                    -- This function resolves a difference between neovim nightly (version 0.11) and stable (version 0.10)
-                    ---@param client vim.lsp.Client
-                    ---@param method vim.lsp.protocol.Method
-                    ---@param bufnr? integer some lsp support methods only in specific files
-                    ---@return boolean
-                    local function client_supports_method(client, method, bufnr)
-                        if vim.fn.has 'nvim-0.11' == 1 then
-                            return client:supports_method(method, bufnr)
-                        else
-                            return client.supports_method(method, { bufnr = bufnr })
-                        end
-                    end
-
-                    -- The following two autocommands are used to highlight references of the
-                    -- word under your cursor when your cursor rests there for a little while.
-                    --    See `:help CursorHold` for information about when this is executed
-                    --
-                    -- When you move your cursor, the highlights will be cleared (the second autocommand).
-                    local client = vim.lsp.get_client_by_id(event.data.client_id)
-                    if not client then return end
-
-
-                    -- Format on save
-                    if client_supports_method(client, vim.lsp.protocol.Methods.textDocument_formatting) then
-                        vim.api.nvim_create_autocmd("BufWritePre", {
-                            buffer = event.buf,
-                            callback = function()
-                                vim.lsp.buf.format { bufnr = event.buf, async = false, id = event.data.client_id }
-                            end,
-                        })
-                    end
-
-                    vim.api.nvim_create_autocmd("BufWritePre", {
-                        pattern = "*.go",
-                        callback = function()
-                            local params = vim.lsp.util.make_range_params(0, "utf-8")
-                            params.context = { only = { "source.organizeImports" } }
-                            -- buf_request_sync defaults to a 1000ms timeout. Depending on your
-                            -- machine and codebase, you may want longer. Add an additional
-                            -- argument after params if you find that you have to write the file
-                            -- twice for changes to be saved.
-                            -- E.g., vim.lsp.buf_request_sync(0, "textDocument/codeAction", params, 3000)
-                            local result = vim.lsp.buf_request_sync(0, "textDocument/codeAction", params)
-                            for cid, res in pairs(result or {}) do
-                                for _, r in pairs(res.result or {}) do
-                                    if r.edit then
-                                        local enc = (vim.lsp.get_client_by_id(cid) or {}).offset_encoding or "utf-16"
-                                        vim.lsp.util.apply_workspace_edit(r.edit, enc)
-                                    end
-                                end
-                            end
-                            vim.lsp.buf.format({ async = false })
-                        end
-                    })
+                    map("<leader>rn", vim.lsp.buf.rename, "[R]e[n]ame")
+                    map("<leader>ca", vim.lsp.buf.code_action, "[C]ode [A]ction")
                 end,
             })
 
             -- Diagnostic Config
             -- See :help vim.diagnostic.Opts
-            vim.diagnostic.config {
+            vim.diagnostic.config({
                 severity_sort = true,
-                float = { border = 'rounded', source = 'if_many' },
+                float = { border = "rounded", source = "if_many" },
                 underline = { severity = vim.diagnostic.severity.ERROR },
                 signs = vim.g.have_nerd_font and {
                     text = {
-                        [vim.diagnostic.severity.ERROR] = '󰅚 ',
-                        [vim.diagnostic.severity.WARN] = '󰀪 ',
-                        [vim.diagnostic.severity.INFO] = '󰋽 ',
-                        [vim.diagnostic.severity.HINT] = '󰌶 ',
+                        [vim.diagnostic.severity.ERROR] = "󰅚 ",
+                        [vim.diagnostic.severity.WARN] = "󰀪 ",
+                        [vim.diagnostic.severity.INFO] = "󰋽 ",
+                        [vim.diagnostic.severity.HINT] = "󰌶 ",
                     },
                 } or {},
                 virtual_text = {
-                    source = 'if_many',
+                    source = "if_many",
                     spacing = 2,
                     format = function(diagnostic)
                         local diagnostic_message = {
@@ -149,9 +94,9 @@ return {
                         return diagnostic_message[diagnostic.severity]
                     end,
                 },
-            }
+            })
 
-            local capabilities = require('blink.cmp').get_lsp_capabilities()
+            local capabilities = require("blink.cmp").get_lsp_capabilities()
 
             local servers = {
                 --                         nushell = {},
@@ -178,20 +123,20 @@ return {
             }
 
             local ensure_installed = vim.tbl_keys(servers or {})
-            vim.list_extend(ensure_installed, { 'stylua' })
+            vim.list_extend(ensure_installed, { "stylua" })
 
-            require('mason-tool-installer').setup { ensure_installed = ensure_installed }
-            require('mason-lspconfig').setup {
+            require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
+            require("mason-lspconfig").setup({
                 ensure_installed = {}, -- explicitly set to empty table
                 automatic_installation = false,
                 handlers = {
                     function(server_name)
                         local server = servers[server_name] or {}
-                        server.capabilities = vim.tbl_deep_extend('force', {}, capabilities, server.capabilities or {})
-                        require('lspconfig')[server_name].setup(server)
+                        server.capabilities = vim.tbl_deep_extend("force", {}, capabilities, server.capabilities or {})
+                        require("lspconfig")[server_name].setup(server)
                     end,
                 },
-            }
+            })
         end,
     },
 }
