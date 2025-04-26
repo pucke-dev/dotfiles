@@ -24,6 +24,8 @@ use std/util "path add"
 ### Environment Variables & Settings
 path add "/opt/homebrew/bin"
 path add "/usr/local/bin"
+path add "/opt/homebrew/opt/php@8.2/bin"
+path add "/opt/homebrew/opt/php@8.2/sbin"
 path add $"(which go)"
 path add ($env.HOME | path join ".go/bin")
 path add ($env.HOME | path join "go/bin")
@@ -40,7 +42,7 @@ $env.TESTCONTAINERS_RYUK_DISABLED = "true"
 $env.DOCKER_HOST = $"unix://(podman machine inspect --format '{{.ConnectionInfo.PodmanSocket.Path}}')"
 
 $env.EDITOR = "nvim"
-$env.config.buffer_editor = "/usr/local/bin/nvim"
+$env.config.buffer_editor = "/opt/homebrew/bin/nvim"
 $env.config.show_banner = false
 $env.config.edit_mode = "vi"
 $env.config.completions.algorithm = "fuzzy"

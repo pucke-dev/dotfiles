@@ -1,3 +1,0 @@
-[submodule "nvim_new"]
-	path = nvim_new
-	url = https://github.com/pucke-dev/kickstart.nvim
