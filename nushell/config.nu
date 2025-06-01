@@ -22,6 +22,7 @@ use std/util "path add"
 
 
 ### Environment Variables & Settings
+path add "/nix/var/nix/profiles/default/bin"
 path add "/opt/homebrew/bin"
 path add "/usr/local/bin"
 path add "/opt/homebrew/opt/php@8.2/bin"
@@ -37,9 +38,8 @@ $env.XDG_CONFIG_HOME = $"($env.HOME)/.config"
 $env.STARSHIP_CONFIG = $"($env.HOME)/.config/starship/starship.toml"
 $env.CARAPACE_BRIDGES = "zsh,fish,bash,inshellisense"
 
-# Podman Configuration
-$env.TESTCONTAINERS_RYUK_DISABLED = "true"
-$env.DOCKER_HOST = $"unix://(podman machine inspect --format '{{.ConnectionInfo.PodmanSocket.Path}}')"
+# $env.DOCKER_HOST = $"unix://($env.HOME)/.config/colima/default/docker.sock"
+# $env.TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE = "/var/run/docker.sock"
 
 $env.EDITOR = "nvim"
 $env.config.buffer_editor = "/opt/homebrew/bin/nvim"
@@ -113,8 +113,6 @@ alias cat-core = cat
 alias cat = bat --paging=never
 
 alias v = nvim
-
-alias docker = podman
 
 alias gs = git status
 alias gp = git push

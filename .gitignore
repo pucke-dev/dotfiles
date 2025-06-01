@@ -8,4 +8,4 @@
 /dataSources.local.xml
 /gcloud
 
-/nushell/history.txt
+./nushell/history.txt

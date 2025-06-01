@@ -1,8 +1,5 @@
 rm nushell/history.txt
-gs
-v .gitignore 
+ls
 gs
 git add .gitignore
-gs
-git diff
-gs
+git diff nushell/config.nu
