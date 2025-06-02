@@ -1,6 +1,11 @@
 vim.lsp.enable({
     "gopls",
     "lua_ls",
+    "ts_ls",
+    "intelephense",
+    "protols",
+    "tailwindcss",
+    "terraformls",
 })
 
 vim.diagnostic.config({
