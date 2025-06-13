@@ -28,3 +28,7 @@ vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper win
 -- Keybinds for CodeCompanion
 vim.keymap.set({ "n", "v" }, "<leader>cac", "<cmd>CodeCompanionActions<cr>", { noremap = true, silent = true })
 vim.keymap.set({ "n", "v" }, "<leader>ct", "<cmd>CodeCompanionChat Toggle<cr>", { noremap = true, silent = true })
+
+-- Better horizontal navigation, working on visual lines
+vim.keymap.set({ "n", "v" }, "j", "gj", { noremap = true, silent = true })
+vim.keymap.set({ "n", "v" }, "k", "gk", { noremap = true, silent = true })

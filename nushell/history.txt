@@ -13,3 +13,109 @@ jj st
 jj desc
 v .
 jj st
+jj new
+jj log
+jj bookmark set main p
+jj log
+jj undo
+jj log
+jj op log
+jj restore dd20dffbc8f5
+jj log
+jj bookmark set main t
+jj log
+jj bookmark delete main
+jj log
+jj bookmark delete p t
+jj log
+jj git push
+jj bookmark set main -r p
+jj log
+jj git push
+jj bookmark track main@origin
+jj log
+jj git push
+cd pictures
+cd picture
+jj log
+v .
+jj log
+go tes
+go test ./...
+v .
+go test ./...
+v .
+go test ./...
+cat README.md 
+make gen-mocks 
+mockery --version
+mockery version
+cat Makefile
+mockery --config .mockery.yaml
+v .
+mockery migrate
+v .
+ls
+v .
+mockery --config .mockery.yaml
+v .
+gs
+go test ./...
+mockery --config .mockery.yaml
+make gen-mocks 
+v .
+jj log
+jj sparse 
+jj sparse list
+jj sparse edit
+jj sparse list
+jj st
+jj opslo
+jj opslog
+jj obslog
+jj restore rp
+jj log
+jj op log
+jj restore 57626bee7364
+jj log
+jj st
+jj diff
+jj log
+jj st
+jj split 
+jj log
+gs
+git restore .mockery.yaml
+gs
+git diff go.mod
+jj log
+jj st
+jj split
+jj log
+jj undo
+jj log
+jj split
+jj log
+jj git fetch 
+jj log
+jj st
+jj squash 
+jj st
+jj undo
+jj st
+jj squash --interactive 
+jj log
+jj st
+jj edit @-
+jj st
+jj log
+jj edit @+
+jj log
+jj st
+jj log
+jj st
+v .
+jj st
+jj desc
+jj st
+jj log
