@@ -3,3 +3,13 @@ ls
 gs
 git add .gitignore
 git diff nushell/config.nu
+jj new main
+jj log
+jj abandon tm v
+jj st
+jj log
+v .
+jj st
+jj desc
+v .
+jj st
