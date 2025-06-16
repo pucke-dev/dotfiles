@@ -29,3 +29,4 @@ macos-option-as-alt = true
 ## Keybindings
 
 keybind = global:cmd+/=toggle_quick_terminal
+keybind = shift+enter=text:\n
