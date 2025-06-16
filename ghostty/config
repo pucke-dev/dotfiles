@@ -3,6 +3,7 @@
 auto-update-channel = tip
 
 env = XDG_CONFIG_HOME=/Users/philippucke/.config
+env = XDG_DATA_HOME=/Users/philippucke/.local/share
 command = /opt/homebrew/bin/nu
 
 ## Theme & Styling
@@ -22,7 +23,7 @@ macos-option-as-alt = true
 #
 ## Enabling a custom shader does only work when background-opacity is not set.
 
-custom-shader = ./shaders/cursor_blaze.glsl
+# custom-shader = ./shaders/cursor_blaze.glsl
 # custom-shader-animation = true
 
 ## Keybindings
