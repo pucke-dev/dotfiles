@@ -19,11 +19,10 @@ macos-option-as-alt = true
 
 ## Shaders
 ## https://github.com/m-ahdal/ghostty-shaders
-## Currently, shaders have to be placed next to the 
-## config, due to a bug in the path resolution.
+#
 ## Enabling a custom shader does only work when background-opacity is not set.
 
-# custom-shader = inside-the-matrix.glsl
+custom-shader = ./shaders/cursor_blaze.glsl
 # custom-shader-animation = true
 
 ## Keybindings
